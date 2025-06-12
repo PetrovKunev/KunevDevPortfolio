@@ -1,4 +1,4 @@
-@{
+﻿@{
     Layout = "_Layout";
     ViewData["Title"] = "Projects";
 }
@@ -10,58 +10,179 @@
             <h1 class="display-5 fw-bolder mb-0">
                 <span class="text-gradient d-inline">Projects</span>
             </h1>
+            <p class="lead fw-light mb-4">Real-world applications that solve business problems</p>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-11 col-xl-9 col-xxl-8">
-                <!-- Project Card 1-->
+
+                <!-- SchoolSelect.net Project -->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">
-                                <h2 class="fw-bolder">Project Name 1</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at
-                                    enim eum illum aperiam placeat esse? Mollitia omnis minima saepe
-                                    recusandae libero, iste ad asperiores! Explicabo commodi quo
-                                    itaque! Ipsam!
+                                <div class="d-flex align-items-center mb-3">
+                                    <h2 class="fw-bolder mb-0 me-3">SchoolSelect.net</h2>
+                                    <span class="badge bg-success">Live</span>
+                                </div>
+                                <p class="mb-3">
+                                    Educational platform helping Bulgarian students make informed high school choices.
+                                    Analyzes student grades and NVO results to recommend the best schools and programs
+                                    based on admission requirements and personal preferences.
                                 </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-2">ASP.NET Core</span>
+                                    <span class="badge bg-primary me-2">Entity Framework</span>
+                                    <span class="badge bg-primary me-2">Bootstrap</span>
+                                    <span class="badge bg-primary me-2">SQL Server</span>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex">
+                                    <a href="https://schoolselect.net" target="_blank" class="btn btn-primary btn-sm">
+                                        <i class="bi bi-globe me-1"></i>Live Demo
+                                    </a>
+                                    <a href="#schoolselect-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
+                                        <i class="bi bi-info-circle me-1"></i>More Details
+                                    </a>
+                                </div>
+                                <div class="collapse mt-3" id="schoolselect-details">
+                                    <div class="card card-body bg-light">
+                                        <h6 class="fw-bold">Key Features:</h6>
+                                        <ul class="mb-2">
+                                            <li>Grade and NVO score analysis system</li>
+                                            <li>School database with real admission data</li>
+                                            <li>Personalized school recommendations</li>
+                                            <li>Filtering by location, programs, and requirements</li>
+                                        </ul>
+                                        <h6 class="fw-bold">Impact:</h6>
+                                        <p class="mb-0">Helps students and parents navigate the complex Bulgarian education system with data-driven insights.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Project 1 screenshot" />
+                            <div class="project-image d-none d-lg-block">
+                                <div class="bg-gradient-primary-to-secondary text-white p-4 rounded-3 text-center" style="min-height: 200px; min-width: 250px;">
+                                    <i class="bi bi-mortarboard-fill" style="font-size: 4rem;"></i>
+                                    <div class="mt-3">
+                                        <h5>Educational Platform</h5>
+                                        <p class="small mb-0">Smart School Selection</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card 2-->
-                <div class="card overflow-hidden shadow rounded-4 border-0">
+
+                <!-- EfficiencyHub Project -->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="d-flex align-items-center">
                             <div class="p-5">
-                                <h2 class="fw-bolder">Project Name 2</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at
-                                    enim eum illum aperiam placeat esse? Mollitia omnis minima saepe
-                                    recusandae libero, iste ad asperiores! Explicabo commodi quo
-                                    itaque! Ipsam!
+                                <div class="d-flex align-items-center mb-3">
+                                    <h2 class="fw-bolder mb-0 me-3">EfficiencyHub</h2>
+                                    <span class="badge bg-secondary">GitHub</span>
+                                </div>
+                                <p class="mb-3">
+                                    Comprehensive project and task management application built with ASP.NET Core 8.0.
+                                    Features user authentication, role-based access control, and administrative dashboard
+                                    for managing teams and tracking productivity.
                                 </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-2">ASP.NET Core 8.0</span>
+                                    <span class="badge bg-primary me-2">Razor Pages</span>
+                                    <span class="badge bg-primary me-2">Identity Framework</span>
+                                    <span class="badge bg-primary me-2">xUnit Testing</span>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex">
+                                    <a href="https://github.com/PetrovKunev/EfficiencyHubApp" target="_blank" class="btn btn-dark btn-sm">
+                                        <i class="bi bi-github me-1"></i>View Code
+                                    </a>
+                                    <a href="#efficiency-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
+                                        <i class="bi bi-info-circle me-1"></i>More Details
+                                    </a>
+                                </div>
+                                <div class="collapse mt-3" id="efficiency-details">
+                                    <div class="card card-body bg-light">
+                                        <h6 class="fw-bold">User Features:</h6>
+                                        <ul class="mb-2">
+                                            <li>Create, edit, and delete projects</li>
+                                            <li>Task management with due dates and statuses</li>
+                                            <li>Automated reminders for deadlines</li>
+                                            <li>Personalized dashboard with activity logs</li>
+                                        </ul>
+                                        <h6 class="fw-bold">Admin Features:</h6>
+                                        <ul class="mb-2">
+                                            <li>User management and role assignment</li>
+                                            <li>System-wide analytics and reporting</li>
+                                        </ul>
+                                        <h6 class="fw-bold">Technical Highlights:</h6>
+                                        <p class="mb-0">Clean architecture, dependency injection, comprehensive unit testing, and secure authentication system.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Project 2 screenshot" />
+                            <div class="project-image d-none d-lg-block">
+                                <div class="bg-gradient-secondary-to-primary text-white p-4 rounded-3 text-center" style="min-height: 200px; min-width: 250px;">
+                                    <i class="bi bi-kanban-fill" style="font-size: 4rem;"></i>
+                                    <div class="mt-3">
+                                        <h5>Project Management</h5>
+                                        <p class="small mb-0">Team Productivity Tool</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Additional Projects Section -->
+                <div class="card border-0 rounded-4 mb-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                    <div class="card-body p-5 text-center">
+                        <h3 class="fw-bolder mb-3">More Projects Coming Soon</h3>
+                        <p class="mb-4">I'm constantly working on new projects and expanding my portfolio. Check back regularly for updates!</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <a href="https://github.com/PetrovKunev" target="_blank" class="btn btn-outline-dark">
+                                <i class="bi bi-github me-1"></i>View GitHub Profile
+                            </a>
+                            <a asp-controller="Home" asp-action="Contact" class="btn btn-primary">
+                                <i class="bi bi-envelope me-1"></i>Discuss Your Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 
-<!-- Call to action section-->
-<section class="py-5 bg-gradient-primary-to-secondary text-white">
-    <div class="container px-5 my-5">
-        <div class="text-center">
-            <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder"
-               asp-controller="Home"
-               asp-action="Contact">
-                Contact me
-            </a>
-        </div>
-    </div>
-</section>
+<!-- Custom Styles for Projects -->
+<style>
+    .text-gradient {
+        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gradient-primary-to-secondary {
+        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
+    }
+
+    .bg-gradient-secondary-to-primary {
+        background: linear-gradient(135deg, var(--bs-secondary) 0%, var(--bs-primary) 100%);
+    }
+
+    .project-image {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover .project-image {
+        transform: scale(1.05);
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+    }
+
+    .btn-sm {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+    }
+</style>
