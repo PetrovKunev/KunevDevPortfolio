@@ -11637,6 +11637,18 @@ html {
 .profile .dots-4 svg {
   fill: #1e30f3;
 }
+@media (max-width: 575.98px) {
+    .profile {
+        height: 60vw;
+        width: 60vw;
+        max-width: 100%;
+    }
+
+        .profile .profile-img {
+            height: 100%;
+            width: 100%;
+        }
+}
 
 @media (min-width: 576px) {
   .profile {
