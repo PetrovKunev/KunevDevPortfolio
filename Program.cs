@@ -1,10 +1,34 @@
+using KunevDevPortfolio.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Register EmailService in DI container
+builder.Services.AddScoped<IEmailService, EmailService>();
+
+// Optional: Add logging
+builder.Services.AddLogging();
+
 var app = builder.Build();
-if (!app.Environment.IsDevelopment()) { app.UseExceptionHandler("/Home/Error"); app.UseHsts(); }
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+
 app.UseAuthorization();
-app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.Run();
