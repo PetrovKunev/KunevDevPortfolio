@@ -162,6 +162,63 @@
                 </div>
             </div>
 
+            <!-- Algorithm Visualizer Project -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-3">
+                            <div class="bg-gradient-warning-to-danger text-white p-3 rounded-3 mb-3">
+                                <i class="bi bi-diagram-3-fill" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <h4 class="fw-bolder mb-0 me-2">Algorithm Visualizer</h4>
+                                <span class="badge bg-success">Live</span>
+                            </div>
+                        </div>
+                        <p class="mb-3 small">
+                            Interactive learning platform for algorithms and data structures visualization.
+                            Step-by-step visualization of sorting, searching, and graph algorithms with modern UI.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-1 mb-1">Next.js</span>
+                            <span class="badge bg-primary me-1 mb-1">React</span>
+                            <span class="badge bg-primary me-1 mb-1">TypeScript</span>
+                            <span class="badge bg-primary me-1 mb-1">Vercel</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://vizualizer.vercel.app" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="bi bi-globe me-1"></i>Live Demo
+                            </a>
+                            <a href="#visualizer-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
+                                <i class="bi bi-info-circle me-1"></i>More Details
+                            </a>
+                        </div>
+                        <div class="collapse mt-3" id="visualizer-details">
+                            <div class="card card-body bg-light">
+                                <h6 class="fw-bold">Algorithms Covered:</h6>
+                                <ul class="mb-2 small">
+                                    <li>Sorting: Bubble, Selection, Insertion, Merge, Quick Sort</li>
+                                    <li>Searching algorithms</li>
+                                    <li>Graph algorithms</li>
+                                    <li>Tree algorithms</li>
+                                    <li>Data structures visualization</li>
+                                </ul>
+                                <h6 class="fw-bold">Features:</h6>
+                                <ul class="mb-2 small">
+                                    <li>Step-by-step algorithm execution</li>
+                                    <li>Speed control and animation</li>
+                                    <li>Time complexity analysis</li>
+                                    <li>Interactive code implementation</li>
+                                    <li>Modern responsive design</li>
+                                </ul>
+                                <h6 class="fw-bold">Technology Stack:</h6>
+                                <p class="mb-0 small">Built with Next.js, React, and TypeScript for optimal performance and developer experience. Deployed on Vercel for seamless delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- EfficiencyHub Project -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
@@ -263,6 +320,10 @@
 
     .bg-gradient-success-to-info {
         background: linear-gradient(135deg, var(--bs-success) 0%, var(--bs-info) 100%);
+    }
+
+    .bg-gradient-warning-to-danger {
+        background: linear-gradient(135deg, var(--bs-warning) 0%, var(--bs-danger) 100%);
     }
 
     .project-card {
