@@ -316,6 +316,62 @@
                 </div>
             </div>
 
+            <!-- CS Visual Lab Project -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-3">
+                            <div class="bg-gradient-primary-to-info text-white p-3 rounded-3 mb-3">
+                                <i class="bi bi-cpu-fill" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <h4 class="fw-bolder mb-0 me-2">CS Visual Lab</h4>
+                                <span class="badge bg-success">Live</span>
+                            </div>
+                        </div>
+                        <p class="mb-3 small">
+                            Interactive learning platform for computer science concepts with animated visualizations.
+                            Covers conditions, loops, data structures, and algorithms with pseudocode and complexity analysis.
+                        </p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-1 mb-1">Next.js 14</span>
+                            <span class="badge bg-primary me-1 mb-1">Tailwind CSS</span>
+                            <span class="badge bg-primary me-1 mb-1">Framer Motion</span>
+                            <span class="badge bg-primary me-1 mb-1">Vercel</span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="https://csvisuallab.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="bi bi-globe me-1"></i>Live Demo
+                            </a>
+                            <a href="#csvisual-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
+                                <i class="bi bi-info-circle me-1"></i>More Details
+                            </a>
+                        </div>
+                        <div class="collapse mt-3" id="csvisual-details">
+                            <div class="card card-body bg-light">
+                                <h6 class="fw-bold">Learning Modules:</h6>
+                                <ul class="mb-2 small">
+                                    <li>Conditional structures with truth tables</li>
+                                    <li>Loops and iterations visualization</li>
+                                    <li>Data structures (arrays, linked lists, stacks, queues)</li>
+                                    <li>Searching and sorting algorithms</li>
+                                </ul>
+                                <h6 class="fw-bold">Features:</h6>
+                                <ul class="mb-2 small">
+                                    <li>Interactive step-by-step visualizations</li>
+                                    <li>Pseudocode with highlighted execution</li>
+                                    <li>Big-O complexity analysis</li>
+                                    <li>Built-in quizzes for knowledge testing</li>
+                                    <li>Accessibility support and keyboard navigation</li>
+                                </ul>
+                                <h6 class="fw-bold">Technology Stack:</h6>
+                                <p class="mb-0 small">Built with Next.js 14, Tailwind CSS, shadcn/ui, Framer Motion for animations, and Zustand for state management. Optimized for educational use.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- EfficiencyHub Project -->
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
@@ -425,6 +481,10 @@
 
     .bg-gradient-danger-to-primary {
         background: linear-gradient(135deg, var(--bs-danger) 0%, var(--bs-primary) 100%);
+    }
+
+    .bg-gradient-primary-to-info {
+        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-info) 100%);
     }
 
     .project-card {
