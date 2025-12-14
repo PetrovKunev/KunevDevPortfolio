@@ -11583,19 +11583,33 @@ html {
   height: 75vw;
   width: 75vw;
   border-radius: 5vw;
-  margin-top: 5vw;
+  margin-top: 8vw;
   max-height: 40rem;
   max-width: 40rem;
+  overflow: hidden; /* държи изображението и overlay-а в рамката */
+}
+
+/* Лек overlay за да “впише” снимка с твърд фон към градиента и да смекчи ръбовете */
+.profile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(80% 80% at 45% 30%, rgba(0, 0, 0, 0) 55%, rgba(30, 48, 243, 0.22) 100%),
+    linear-gradient(135deg, rgba(30, 48, 243, 0.10) 0%, rgba(226, 30, 128, 0.10) 100%);
 }
 .profile .profile-img {
         height: 100%;
         width: 100%;
         object-fit: cover; /* Запазва пропорциите и запълва контейнера */
-        object-position: center; /* Центрира изображението */
+        object-position: 50% 10%; /* Показваме цялата горна част на главата */
         position: absolute;
         top: 0;
         left: 0;
         border-radius: 5vw; /* Същия border-radius като контейнера */
+        filter: saturate(1.05) contrast(1.03);
         /* Премахваме предишните стилове за позициониране */
         /* bottom: 0; */
         /* left: 50%; */
