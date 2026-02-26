@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Page_Title" xml:space="preserve"><value>Resume</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Software Engineer passionate about creating innovative web solutions</value></data>
+  <data name="Experience_Title" xml:space="preserve"><value>Experience</value></data>
+  <data name="Download_Resume" xml:space="preserve"><value>Download Resume</value></data>
+  <data name="Exp1_Period" xml:space="preserve"><value>2024 - Present</value></data>
+  <data name="Exp1_Role" xml:space="preserve"><value>Software Engineer</value></data>
+  <data name="Exp1_Company" xml:space="preserve"><value>Freelance &amp; Personal Projects</value></data>
+  <data name="Exp1_Location" xml:space="preserve"><value>Bulgaria</value></data>
+  <data name="Exp1_Desc" xml:space="preserve"><value>Developing educational web applications and project management tools using ASP.NET Core. Created SchoolSelect.net - a platform helping Bulgarian students choose high schools based on their grades and preferences. Built comprehensive project management systems with user authentication and role-based access control.</value></data>
+  <data name="Exp2_Period" xml:space="preserve"><value>2023 - 2025</value></data>
+  <data name="Exp2_Role" xml:space="preserve"><value>Back-End Software Engineering Student</value></data>
+  <data name="Exp2_Company" xml:space="preserve"><value>Software University</value></data>
+  <data name="Exp2_Location" xml:space="preserve"><value>Sofia, Bulgaria</value></data>
+  <data name="Exp2_Desc" xml:space="preserve"><value>Completed intensive professional qualification program for Back-End Software Engineer with C#. Mastered modern web development technologies through 450+ hours of hands-on training. Achieved excellent academic performance with average grade of 6.00/6.00 across core subjects including ASP.NET Core, Entity Framework, and advanced C# programming.</value></data>
+  <data name="Education_Title" xml:space="preserve"><value>Education &amp; Certifications</value></data>
+  <data name="Edu1_Period" xml:space="preserve"><value>Completed 2025</value></data>
+  <data name="Edu1_Institution" xml:space="preserve"><value>Software University</value></data>
+  <data name="Edu1_Location" xml:space="preserve"><value>Sofia, Bulgaria</value></data>
+  <data name="Edu1_Type" xml:space="preserve"><value>Professional Qualification</value></data>
+  <data name="Edu1_Program" xml:space="preserve"><value>Back-End Software Engineer with C#</value></data>
+  <data name="Edu1_Desc" xml:space="preserve"><value>Comprehensive professional qualification program covering back-end development, database design, and software engineering best practices. Completed 450+ hours of intensive training across 12 specialized courses with excellent grades (average 6.00/6.00).</value></data>
+  <data name="Edu1_ViewDetails" xml:space="preserve"><value>View Course Details</value></data>
+  <data name="Edu1_CoursesTitle" xml:space="preserve"><value>Completed Courses:</value></data>
+  <data name="Edu1_Total" xml:space="preserve"><value>Total: 450+ hours of professional training</value></data>
+  <data name="Skills_Backend" xml:space="preserve"><value>Backend Technologies</value></data>
+  <data name="Skills_Frontend" xml:space="preserve"><value>Frontend Technologies</value></data>
+  <data name="Skills_Tools" xml:space="preserve"><value>Tools &amp; Methodologies</value></data>
+  <data name="Achievements_Title" xml:space="preserve"><value>Key Achievements</value></data>
+  <data name="Achievement1_Title" xml:space="preserve"><value>SchoolSelect.net</value></data>
+  <data name="Achievement1_Desc" xml:space="preserve"><value>Live educational platform serving Bulgarian students</value></data>
+  <data name="Achievement2_Title" xml:space="preserve"><value>EfficiencyHub</value></data>
+  <data name="Achievement2_Desc" xml:space="preserve"><value>Comprehensive project management application</value></data>
+  <data name="Achievement3_Title" xml:space="preserve"><value>Full-Stack Expertise</value></data>
+  <data name="Achievement3_Desc" xml:space="preserve"><value>Frontend to backend development with testing</value></data>
+  <data name="Achievement4_Title" xml:space="preserve"><value>Business Focus</value></data>
+  <data name="Achievement4_Desc" xml:space="preserve"><value>Solutions that solve real-world problems</value></data>
+</root>

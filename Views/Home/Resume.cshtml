@@ -1,14 +1,15 @@
-﻿@{
+@inject IViewLocalizer Localizer
+@{
     Layout = "_Layout";
-    ViewData["Title"] = "Resume";
+    ViewData["Title"] = Localizer["Page_Title"].Value;
 }
 
 <div class="container px-3 px-lg-5 my-5">
     <div class="text-center mb-5">
         <h1 class="display-5 fw-bolder mb-0">
-            <span class="text-gradient d-inline">Resume</span>
+            <span class="text-gradient d-inline">@Localizer["Page_Title"]</span>
         </h1>
-        <p class="lead fw-light mb-4">Software Engineer passionate about creating innovative web solutions</p>
+        <p class="lead fw-light mb-4">@Localizer["Page_Subtitle"]</p>
     </div>
     <div class="row gx-5 justify-content-center">
         <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -16,11 +17,11 @@
             <!-- Experience Section-->
             <section>
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                    <h2 class="text-primary fw-bolder mb-0">@Localizer["Experience_Title"]</h2>
                     <!-- Download resume button -->
                     <a class="btn btn-primary px-4 py-3" href="~/assets/Yavor_Petrov_Resume.pdf" target="_blank">
                         <div class="d-inline-block bi bi-download me-2"></div>
-                        Download Resume
+                        @Localizer["Download_Resume"]
                     </a>
                 </div>
 
@@ -30,19 +31,14 @@
                         <div class="row align-items-center gx-5">
                             <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                 <div class="bg-light p-4 rounded-4">
-                                    <div class="text-primary fw-bolder mb-2">2024 - Present</div>
-                                    <div class="small fw-bolder">Software Engineer</div>
-                                    <div class="small text-muted">Freelance & Personal Projects</div>
-                                    <div class="small text-muted">Bulgaria</div>
+                                    <div class="text-primary fw-bolder mb-2">@Localizer["Exp1_Period"]</div>
+                                    <div class="small fw-bolder">@Localizer["Exp1_Role"]</div>
+                                    <div class="small text-muted">@Localizer["Exp1_Company"]</div>
+                                    <div class="small text-muted">@Localizer["Exp1_Location"]</div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>
-                                    Developing educational web applications and project management tools using ASP.NET Core.
-                                    Created SchoolSelect.net - a platform helping Bulgarian students choose high schools based on
-                                    their grades and preferences. Built comprehensive project management systems with user authentication
-                                    and role-based access control.
-                                </div>
+                                <div>@Localizer["Exp1_Desc"]</div>
                                 <div class="mt-3">
                                     <span class="badge bg-primary me-2">ASP.NET Core</span>
                                     <span class="badge bg-primary me-2">Entity Framework</span>
@@ -60,19 +56,14 @@
                         <div class="row align-items-center gx-5">
                             <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                 <div class="bg-light p-4 rounded-4">
-                                    <div class="text-primary fw-bolder mb-2">2023 - 2025</div>
-                                    <div class="small fw-bolder">Back-End Software Engineering Student</div>
-                                    <div class="small text-muted">Software University</div>
-                                    <div class="small text-muted">Sofia, Bulgaria</div>
+                                    <div class="text-primary fw-bolder mb-2">@Localizer["Exp2_Period"]</div>
+                                    <div class="small fw-bolder">@Localizer["Exp2_Role"]</div>
+                                    <div class="small text-muted">@Localizer["Exp2_Company"]</div>
+                                    <div class="small text-muted">@Localizer["Exp2_Location"]</div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>
-                                    Completed intensive professional qualification program for Back-End Software Engineer with C#.
-                                    Mastered modern web development technologies through 450+ hours of hands-on training.
-                                    Achieved excellent academic performance with average grade of 6.00/6.00 across core subjects
-                                    including ASP.NET Core, Entity Framework, and advanced C# programming.
-                                </div>
+                                <div>@Localizer["Exp2_Desc"]</div>
                                 <div class="mt-3">
                                     <span class="badge bg-secondary me-2">Professional Qualification</span>
                                     <span class="badge bg-secondary me-2">450+ Training Hours</span>
@@ -86,7 +77,7 @@
 
             <!-- Education Section-->
             <section>
-                <h2 class="text-secondary fw-bolder mb-4">Education & Certifications</h2>
+                <h2 class="text-secondary fw-bolder mb-4">@Localizer["Education_Title"]</h2>
 
                 <!-- Education Card 1-->
                 <div class="card shadow border-0 rounded-4 mb-5">
@@ -94,23 +85,19 @@
                         <div class="row align-items-center gx-5">
                             <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                 <div class="bg-light p-4 rounded-4">
-                                    <div class="text-secondary fw-bolder mb-2">Completed 2025</div>
+                                    <div class="text-secondary fw-bolder mb-2">@Localizer["Edu1_Period"]</div>
                                     <div class="mb-2">
-                                        <div class="small fw-bolder">Software University</div>
-                                        <div class="small text-muted">Sofia, Bulgaria</div>
+                                        <div class="small fw-bolder">@Localizer["Edu1_Institution"]</div>
+                                        <div class="small text-muted">@Localizer["Edu1_Location"]</div>
                                     </div>
                                     <div class="fst-italic">
-                                        <div class="small text-muted">Professional Qualification</div>
-                                        <div class="small text-muted">Back-End Software Engineer with C#</div>
+                                        <div class="small text-muted">@Localizer["Edu1_Type"]</div>
+                                        <div class="small text-muted">@Localizer["Edu1_Program"]</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div>
-                                    Comprehensive professional qualification program covering back-end development,
-                                    database design, and software engineering best practices. Completed 450+ hours of intensive
-                                    training across 12 specialized courses with excellent grades (average 6.00/6.00).
-                                </div>
+                                <div>@Localizer["Edu1_Desc"]</div>
                                 <div class="mt-3">
                                     <div class="d-flex flex-wrap gap-2">
                                         <span class="badge bg-outline-secondary">C# Advanced (6.00)</span>
@@ -121,12 +108,12 @@
                                 </div>
                                 <div class="mt-2">
                                     <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#diploma-details">
-                                        <i class="bi bi-award me-1"></i>View Course Details
+                                        <i class="bi bi-award me-1"></i>@Localizer["Edu1_ViewDetails"]
                                     </button>
                                 </div>
                                 <div class="collapse mt-3" id="diploma-details">
                                     <div class="card card-body bg-light">
-                                        <h6 class="fw-bold mb-3">Completed Courses:</h6>
+                                        <h6 class="fw-bold mb-3">@Localizer["Edu1_CoursesTitle"]</h6>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <ul class="small mb-2">
@@ -148,7 +135,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <p class="small mb-0 text-muted"><strong>Total:</strong> 450+ hours of professional training</p>
+                                        <p class="small mb-0 text-muted"><strong>@Localizer["Edu1_Total"]</strong></p>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +158,7 @@
                                     <i class="bi bi-server"></i>
                                 </div>
                                 <h3 class="fw-bolder mb-0">
-                                    <span class="text-gradient d-inline">Backend Technologies</span>
+                                    <span class="text-gradient d-inline">@Localizer["Skills_Backend"]</span>
                                 </h3>
                             </div>
                             <div class="row row-cols-1 row-cols-md-3 mb-4">
@@ -205,7 +192,7 @@
                                     <i class="bi bi-palette"></i>
                                 </div>
                                 <h3 class="fw-bolder mb-0">
-                                    <span class="text-gradient d-inline">Frontend Technologies</span>
+                                    <span class="text-gradient d-inline">@Localizer["Skills_Frontend"]</span>
                                 </h3>
                             </div>
                             <div class="row row-cols-1 row-cols-md-3 mb-4">
@@ -239,7 +226,7 @@
                                     <i class="bi bi-tools"></i>
                                 </div>
                                 <h3 class="fw-bolder mb-0">
-                                    <span class="text-gradient d-inline">Tools & Methodologies</span>
+                                    <span class="text-gradient d-inline">@Localizer["Skills_Tools"]</span>
                                 </h3>
                             </div>
                             <div class="row row-cols-1 row-cols-md-3 mb-4">
@@ -274,15 +261,15 @@
                 <div class="card border-0 rounded-4 mb-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
                     <div class="card-body p-5">
                         <h3 class="fw-bolder mb-4 text-center">
-                            <span class="text-gradient d-inline">Key Achievements</span>
+                            <span class="text-gradient d-inline">@Localizer["Achievements_Title"]</span>
                         </h3>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
                                     <div>
-                                        <h6 class="fw-bold mb-1">SchoolSelect.net</h6>
-                                        <p class="small mb-0">Live educational platform serving Bulgarian students</p>
+                                        <h6 class="fw-bold mb-1">@Localizer["Achievement1_Title"]</h6>
+                                        <p class="small mb-0">@Localizer["Achievement1_Desc"]</p>
                                     </div>
                                 </div>
                             </div>
@@ -290,8 +277,8 @@
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
                                     <div>
-                                        <h6 class="fw-bold mb-1">EfficiencyHub</h6>
-                                        <p class="small mb-0">Comprehensive project management application</p>
+                                        <h6 class="fw-bold mb-1">@Localizer["Achievement2_Title"]</h6>
+                                        <p class="small mb-0">@Localizer["Achievement2_Desc"]</p>
                                     </div>
                                 </div>
                             </div>
@@ -299,8 +286,8 @@
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
                                     <div>
-                                        <h6 class="fw-bold mb-1">Full-Stack Expertise</h6>
-                                        <p class="small mb-0">Frontend to backend development with testing</p>
+                                        <h6 class="fw-bold mb-1">@Localizer["Achievement3_Title"]</h6>
+                                        <p class="small mb-0">@Localizer["Achievement3_Desc"]</p>
                                     </div>
                                 </div>
                             </div>
@@ -308,8 +295,8 @@
                                 <div class="d-flex align-items-start">
                                     <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
                                     <div>
-                                        <h6 class="fw-bold mb-1">Business Focus</h6>
-                                        <p class="small mb-0">Solutions that solve real-world problems</p>
+                                        <h6 class="fw-bold mb-1">@Localizer["Achievement4_Title"]</h6>
+                                        <p class="small mb-0">@Localizer["Achievement4_Desc"]</p>
                                     </div>
                                 </div>
                             </div>
