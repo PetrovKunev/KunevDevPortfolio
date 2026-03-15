@@ -1,0 +1,57 @@
+@inject IViewLocalizer Localizer
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = Localizer["Page_Title"].Value;
+}
+
+<section class="section-dark">
+    <div class="container px-3 px-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-label">@Localizer["Page_Label"]</div>
+                <h1 class="section-heading mb-4">@Localizer["Page_Title"]</h1>
+                <p class="section-subtitle mb-5">@Localizer["Page_Intro"]</p>
+
+                <div class="service-item">
+                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
+                    <div>
+                        <h4>@Localizer["Service1_Title"]</h4>
+                        <p>@Localizer["Service1_Desc"]</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
+                    <div>
+                        <h4>@Localizer["Service2_Title"]</h4>
+                        <p>@Localizer["Service2_Desc"]</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
+                    <div>
+                        <h4>@Localizer["Service3_Title"]</h4>
+                        <p>@Localizer["Service3_Desc"]</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
+                    <div>
+                        <h4>@Localizer["Service4_Title"]</h4>
+                        <p>@Localizer["Service4_Desc"]</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-border);">
+                    <h3 class="mb-3">@Localizer["CTA_Title"]</h3>
+                    <p style="color: var(--kd-text-secondary);">@Localizer["CTA_Text"]</p>
+                    <a class="btn-accent mt-3 d-inline-block" asp-controller="Home" asp-action="Contact">
+                        <i class="bi bi-calendar-check me-2"></i>@Localizer["CTA_Button"]
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

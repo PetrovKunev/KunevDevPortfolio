@@ -1,517 +1,167 @@
-﻿@{
+@inject IViewLocalizer Localizer
+@{
     Layout = "_Layout";
-    ViewData["Title"] = "Projects";
+    ViewData["Title"] = Localizer["Page_Title"].Value;
 }
 
-<!-- Projects Section-->
-<section class="py-5">
-    <div class="container px-3 px-lg-5 mb-5">
+<section class="section-dark">
+    <div class="container px-3 px-lg-5">
         <div class="text-center mb-5">
-            <h1 class="display-5 fw-bolder mb-0">
-                <span class="text-gradient d-inline">Projects</span>
-            </h1>
-            <p class="lead fw-light mb-4">Real-world applications that solve business problems</p>
+            <div class="section-label">@Localizer["Page_Label"]</div>
+            <h1 class="section-heading">@Localizer["Page_Title"]</h1>
+            <p class="section-subtitle mx-auto">@Localizer["Page_Subtitle"]</p>
         </div>
-        
-        <!-- Projects Grid - 3 Columns -->
+
         <div class="row g-4">
-            
-            <!-- SchoolSelect.net Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-primary-to-secondary text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-mortarboard-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">SchoolSelect.net</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Educational platform helping Bulgarian students make informed high school choices.
-                            Analyzes student grades and NVO results to recommend the best schools and programs.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">ASP.NET Core</span>
-                            <span class="badge bg-primary me-1 mb-1">Entity Framework</span>
-                            <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
-                            <span class="badge bg-primary me-1 mb-1">SQL Server</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://schoolselect.net" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#schoolselect-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="schoolselect-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Key Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Grade and NVO score analysis system</li>
-                                    <li>School database with real admission data</li>
-                                    <li>Personalized school recommendations</li>
-                                    <li>Filtering by location, programs, and requirements</li>
-                                </ul>
-                                <h6 class="fw-bold">Impact:</h6>
-                                <p class="mb-0 small">Helps students and parents navigate the complex Bulgarian education system with data-driven insights.</p>
-                            </div>
-                        </div>
+
+            <!-- CodeGrade — Featured -->
+            <div class="col-lg-6">
+                <div class="project-card-new featured">
+                    <div class="project-icon"><i class="bi bi-check-circle-fill"></i></div>
+                    <h3>CodeGrade</h3>
+                    <p class="project-desc">@Localizer["CodeGrade_Tagline"]</p>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Problem"]</div>
+                        <p class="narrative-text">@Localizer["CodeGrade_Problem"]</p>
+                    </div>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Approach"]</div>
+                        <p class="narrative-text">@Localizer["CodeGrade_Approach"]</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>C# / ASP.NET Core</span>
+                        <span>MS SQL</span>
+                        <span>Tailwind CSS</span>
+                        <span>Judge0 API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://codegrade.kunev.dev/" target="_blank"><i class="bi bi-globe2"></i> @Localizer["Link_Live"]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- AcademyLogos.com Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-success-to-info text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-book-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">AcademyLogos.com</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Educational platform offering courses for 5th, 6th, and 7th grade students.
-                            Specialized in Mathematics, Bulgarian Language and Literature, and Programming.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">ASP.NET Core</span>
-                            <span class="badge bg-primary me-1 mb-1">Entity Framework</span>
-                            <span class="badge bg-primary me-1 mb-1">TailwindCSS</span>
-                            <span class="badge bg-primary me-1 mb-1">MS SQL</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://academylogos.com" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#academylogos-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="academylogos-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Course Offerings:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Mathematics for 5th, 6th, and 7th grade</li>
-                                    <li>Bulgarian Language and Literature</li>
-                                    <li>Programming fundamentals</li>
-                                    <li>Interactive learning materials</li>
-                                </ul>
-                                <h6 class="fw-bold">Target Audience:</h6>
-                                <p class="mb-2 small">Middle school students (grades 5-7) looking to strengthen their academic foundation and develop programming skills.</p>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Built with ASP.NET Core, Entity Framework for data management, TailwindCSS for modern responsive design, and MS SQL Server for robust database performance.</p>
-                            </div>
-                        </div>
+            <!-- SchoolSelect -->
+            <div class="col-lg-6">
+                <div class="project-card-new">
+                    <div class="project-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h3>SchoolSelect.net</h3>
+                    <p class="project-desc">@Localizer["SchoolSelect_Tagline"]</p>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Problem"]</div>
+                        <p class="narrative-text">@Localizer["SchoolSelect_Problem"]</p>
+                    </div>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Approach"]</div>
+                        <p class="narrative-text">@Localizer["SchoolSelect_Approach"]</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>Entity Framework</span>
+                        <span>SQL Server</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://schoolselect.net" target="_blank"><i class="bi bi-globe2"></i> @Localizer["Link_Live"]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Flow.kunev.dev Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-info-to-warning text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-lightning-charge-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">Flow.kunev.dev</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Manage your finances with Flow. Track income and expenses, plan your budget, 
-                            and analyze your financial status with the easiest personal finance management application.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">Personal Finance</span>
-                            <span class="badge bg-primary me-1 mb-1">Budget Planning</span>
-                            <span class="badge bg-primary me-1 mb-1">Expense Tracking</span>
-                            <span class="badge bg-primary me-1 mb-1">Financial Analytics</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://flow.kunev.dev" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#flow-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="flow-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Key Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Income and expense tracking</li>
-                                    <li>Budget planning and management</li>
-                                    <li>Financial analytics and reports</li>
-                                    <li>Transaction categorization</li>
-                                </ul>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Modern web application for personal finance management with intuitive interface and powerful analytical capabilities.</p>
-                            </div>
-                        </div>
+            <!-- Algorithm Visualizer -->
+            <div class="col-lg-6">
+                <div class="project-card-new">
+                    <div class="project-icon"><i class="bi bi-diagram-3-fill"></i></div>
+                    <h3>Algorithm Visualizer</h3>
+                    <p class="project-desc">@Localizer["AlgoViz_Tagline"]</p>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Problem"]</div>
+                        <p class="narrative-text">@Localizer["AlgoViz_Problem"]</p>
+                    </div>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Approach"]</div>
+                        <p class="narrative-text">@Localizer["AlgoViz_Approach"]</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vizualizer.vercel.app" target="_blank"><i class="bi bi-globe2"></i> @Localizer["Link_Live"]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Algorithm Visualizer Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-warning-to-danger text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-diagram-3-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">Algorithm Visualizer</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Interactive learning platform for algorithms and data structures visualization.
-                            Step-by-step visualization of sorting, searching, and graph algorithms with modern UI.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">Next.js</span>
-                            <span class="badge bg-primary me-1 mb-1">React</span>
-                            <span class="badge bg-primary me-1 mb-1">TypeScript</span>
-                            <span class="badge bg-primary me-1 mb-1">Vercel</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://vizualizer.vercel.app" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#visualizer-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="visualizer-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Algorithms Covered:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Sorting: Bubble, Selection, Insertion, Merge, Quick Sort</li>
-                                    <li>Searching algorithms</li>
-                                    <li>Graph algorithms</li>
-                                    <li>Tree algorithms</li>
-                                    <li>Data structures visualization</li>
-                                </ul>
-                                <h6 class="fw-bold">Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Step-by-step algorithm execution</li>
-                                    <li>Speed control and animation</li>
-                                    <li>Time complexity analysis</li>
-                                    <li>Interactive code implementation</li>
-                                    <li>Modern responsive design</li>
-                                </ul>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Built with Next.js, React, and TypeScript for optimal performance and developer experience. Deployed on Vercel for seamless delivery.</p>
-                            </div>
-                        </div>
+            <!-- CS Visual Lab -->
+            <div class="col-lg-6">
+                <div class="project-card-new">
+                    <div class="project-icon"><i class="bi bi-cpu-fill"></i></div>
+                    <h3>CS Visual Lab</h3>
+                    <p class="project-desc">@Localizer["CSVisualLab_Tagline"]</p>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Problem"]</div>
+                        <p class="narrative-text">@Localizer["CSVisualLab_Problem"]</p>
+                    </div>
+                    <div class="project-narrative">
+                        <div class="narrative-label">@Localizer["Label_Approach"]</div>
+                        <p class="narrative-text">@Localizer["CSVisualLab_Approach"]</p>
+                    </div>
+                    <div class="project-tech">
+                        <span>Next.js 14</span>
+                        <span>Tailwind CSS</span>
+                        <span>Framer Motion</span>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://csvisuallab.vercel.app/" target="_blank"><i class="bi bi-globe2"></i> @Localizer["Link_Live"]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- World Explorer Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-primary-to-secondary text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-geo-alt-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">World Explorer</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            A world map app to bookmark visited and wishlist destinations. Built with Next.js and Supabase.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">Next.js</span>
-                            <span class="badge bg-primary me-1 mb-1">React</span>
-                            <span class="badge bg-primary me-1 mb-1">Supabase</span>
-                            <span class="badge bg-primary me-1 mb-1">Vercel</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://world-blush.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#world-explorer-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="world-explorer-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Key Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Mark visited places and wishlist destinations on an interactive world map</li>
-                                    <li>Persistent storage and authentication powered by Supabase</li>
-                                    <li>Responsive, mobile-friendly UI</li>
-                                </ul>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Next.js app with Supabase backend, deployed on Vercel.</p>
-                            </div>
-                        </div>
+            <!-- AcademyLogos -->
+            <div class="col-lg-6">
+                <div class="project-card-new">
+                    <div class="project-icon"><i class="bi bi-book-fill"></i></div>
+                    <h3>AcademyLogos.com</h3>
+                    <p class="project-desc">@Localizer["AcademyLogos_Tagline"]</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core</span>
+                        <span>Entity Framework</span>
+                        <span>TailwindCSS</span>
+                        <span>MS SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://academylogos.com" target="_blank"><i class="bi bi-globe2"></i> @Localizer["Link_Live"]</a>
                     </div>
                 </div>
             </div>
 
-            <!-- CodeGrade Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-danger-to-primary text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-check-circle-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">CodeGrade</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Modern automated code grading system for programming teachers and students.
-                            Features Judge0 API integration for secure code execution and comprehensive testing.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">ASP.NET Core</span>
-                            <span class="badge bg-primary me-1 mb-1">MS SQL</span>
-                            <span class="badge bg-primary me-1 mb-1">Tailwind CSS</span>
-                            <span class="badge bg-primary me-1 mb-1">Judge0 API</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://codegrade.kunev.dev/" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#codegrade-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="codegrade-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Key Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Automated code evaluation through Judge0 system</li>
-                                    <li>Support for 15+ programming languages</li>
-                                    <li>User management with student, teacher, and admin roles</li>
-                                    <li>Detailed progress tracking and analytics</li>
-                                    <li>Secure code execution with 30s time limit and 128MB memory limit</li>
-                                </ul>
-                                <h6 class="fw-bold">Supported Languages:</h6>
-                                <p class="mb-2 small">C#, Python, Java, JavaScript, C++, PHP, Ruby, Go, Rust, C, Swift, Kotlin, Scala, R, Dart and more.</p>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Built with ASP.NET Core for robust backend, MS SQL Server for data management, and Tailwind CSS for modern responsive design.</p>
-                            </div>
-                        </div>
+            <!-- EfficiencyHub -->
+            <div class="col-lg-6">
+                <div class="project-card-new">
+                    <div class="project-icon"><i class="bi bi-kanban-fill"></i></div>
+                    <h3>EfficiencyHub</h3>
+                    <p class="project-desc">@Localizer["EfficiencyHub_Tagline"]</p>
+                    <div class="project-tech">
+                        <span>ASP.NET Core 8.0</span>
+                        <span>Razor Pages</span>
+                        <span>Identity Framework</span>
+                        <span>xUnit</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- CS Visual Lab Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-primary-to-info text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-cpu-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">CS Visual Lab</h4>
-                                <span class="badge bg-success">Live</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Interactive learning platform for computer science concepts with animated visualizations.
-                            Covers conditions, loops, data structures, and algorithms with pseudocode and complexity analysis.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">Next.js 14</span>
-                            <span class="badge bg-primary me-1 mb-1">Tailwind CSS</span>
-                            <span class="badge bg-primary me-1 mb-1">Framer Motion</span>
-                            <span class="badge bg-primary me-1 mb-1">Vercel</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://csvisuallab.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
-                                <i class="bi bi-globe me-1"></i>Live Demo
-                            </a>
-                            <a href="#csvisual-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="csvisual-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">Learning Modules:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Conditional structures with truth tables</li>
-                                    <li>Loops and iterations visualization</li>
-                                    <li>Data structures (arrays, linked lists, stacks, queues)</li>
-                                    <li>Searching and sorting algorithms</li>
-                                </ul>
-                                <h6 class="fw-bold">Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Interactive step-by-step visualizations</li>
-                                    <li>Pseudocode with highlighted execution</li>
-                                    <li>Big-O complexity analysis</li>
-                                    <li>Built-in quizzes for knowledge testing</li>
-                                    <li>Accessibility support and keyboard navigation</li>
-                                </ul>
-                                <h6 class="fw-bold">Technology Stack:</h6>
-                                <p class="mb-0 small">Built with Next.js 14, Tailwind CSS, shadcn/ui, Framer Motion for animations, and Zustand for state management. Optimized for educational use.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- EfficiencyHub Project -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 overflow-hidden shadow rounded-4 border-0 project-card">
-                    <div class="card-body p-4">
-                        <div class="text-center mb-3">
-                            <div class="bg-gradient-secondary-to-primary text-white p-3 rounded-3 mb-3">
-                                <i class="bi bi-kanban-fill" style="font-size: 2.5rem;"></i>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center mb-2">
-                                <h4 class="fw-bolder mb-0 me-2">EfficiencyHub</h4>
-                                <span class="badge bg-secondary">GitHub</span>
-                            </div>
-                        </div>
-                        <p class="mb-3 small">
-                            Comprehensive project and task management application built with ASP.NET Core 8.0.
-                            Features user authentication, role-based access control, and administrative dashboard.
-                        </p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary me-1 mb-1">ASP.NET Core 8.0</span>
-                            <span class="badge bg-primary me-1 mb-1">Razor Pages</span>
-                            <span class="badge bg-primary me-1 mb-1">Identity Framework</span>
-                            <span class="badge bg-primary me-1 mb-1">xUnit Testing</span>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <a href="https://github.com/PetrovKunev/EfficiencyHubApp" target="_blank" class="btn btn-dark btn-sm">
-                                <i class="bi bi-github me-1"></i>View Code
-                            </a>
-                            <a href="#efficiency-details" class="btn btn-outline-primary btn-sm" data-bs-toggle="collapse">
-                                <i class="bi bi-info-circle me-1"></i>More Details
-                            </a>
-                        </div>
-                        <div class="collapse mt-3" id="efficiency-details">
-                            <div class="card card-body bg-light">
-                                <h6 class="fw-bold">User Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>Create, edit, and delete projects</li>
-                                    <li>Task management with due dates and statuses</li>
-                                    <li>Automated reminders for deadlines</li>
-                                    <li>Personalized dashboard with activity logs</li>
-                                </ul>
-                                <h6 class="fw-bold">Admin Features:</h6>
-                                <ul class="mb-2 small">
-                                    <li>User management and role assignment</li>
-                                    <li>System-wide analytics and reporting</li>
-                                </ul>
-                                <h6 class="fw-bold">Technical Highlights:</h6>
-                                <p class="mb-0 small">Clean architecture, dependency injection, comprehensive unit testing, and secure authentication system.</p>
-                            </div>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PetrovKunev/EfficiencyHubApp" target="_blank"><i class="bi bi-github"></i> @Localizer["Link_Code"]</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- Additional Projects Section -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <div class="card border-0 rounded-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-                    <div class="card-body p-5 text-center">
-                        <h3 class="fw-bolder mb-3">More Projects Coming Soon</h3>
-                        <p class="mb-4">I'm constantly working on new projects and expanding my portfolio. Check back regularly for updates!</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-center">
-                            <a href="https://github.com/PetrovKunev" target="_blank" class="btn btn-outline-dark">
-                                <i class="bi bi-github me-1"></i>View GitHub Profile
-                            </a>
-                            <a asp-controller="Home" asp-action="Contact" class="btn btn-primary">
-                                <i class="bi bi-envelope me-1"></i>Discuss Your Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- More on GitHub -->
+        <div class="text-center mt-5 pt-4" style="border-top: 1px solid var(--kd-border);">
+            <p class="text-muted mb-3">@Localizer["More_Text"]</p>
+            <a href="https://github.com/PetrovKunev" target="_blank" class="btn-outline-light-custom">
+                <i class="bi bi-github me-2"></i>@Localizer["More_GitHub"]
+            </a>
         </div>
-
     </div>
 </section>
-
-<!-- Custom Styles for Projects -->
-<style>
-    .text-gradient {
-        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .bg-gradient-primary-to-secondary {
-        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-secondary) 100%);
-    }
-
-    .bg-gradient-secondary-to-primary {
-        background: linear-gradient(135deg, var(--bs-secondary) 0%, var(--bs-primary) 100%);
-    }
-
-    .bg-gradient-info-to-warning {
-        background: linear-gradient(135deg, var(--bs-info) 0%, var(--bs-warning) 100%);
-    }
-
-    .bg-gradient-success-to-info {
-        background: linear-gradient(135deg, var(--bs-success) 0%, var(--bs-info) 100%);
-    }
-
-    .bg-gradient-warning-to-danger {
-        background: linear-gradient(135deg, var(--bs-warning) 0%, var(--bs-danger) 100%);
-    }
-
-    .bg-gradient-danger-to-primary {
-        background: linear-gradient(135deg, var(--bs-danger) 0%, var(--bs-primary) 100%);
-    }
-
-    .bg-gradient-primary-to-info {
-        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-info) 100%);
-    }
-
-    .project-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
-    }
-
-    .badge {
-        font-size: 0.7rem;
-        padding: 0.3em 0.6em;
-    }
-
-    .btn-sm {
-        padding: 0.375rem 0.75rem;
-        font-size: 0.875rem;
-    }
-
-    .card-body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-body .d-grid {
-        margin-top: auto;
-    }
-</style>

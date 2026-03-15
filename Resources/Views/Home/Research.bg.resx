@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Page_Label" xml:space="preserve"><value>ИЗСЛЕДВАНИЯ</value></data>
+  <data name="Page_Title" xml:space="preserve"><value>Текущо изследване</value></data>
+  <data name="Status" xml:space="preserve"><value>В процес</value></data>
+  <data name="Topic" xml:space="preserve"><value>Интелигентни системи за обучение по програмиране в ерата на LLM</value></data>
+  <data name="Summary" xml:space="preserve"><value>Докато LLM моделите променят начина, по който хората учат да програмират, какви когнитивни компетенции трябва реално да развиват AI системите за обучение? Докторското ми изследване разглежда този въпрос през призмата на теорията за когнитивното натоварване и рамката ICAP.</value></data>
+  <data name="Summary_2" xml:space="preserve"><value>Целта е да разберем не просто дали AI може да помогне на студентите да научат програмиране, а как да проектираме AI-подпомогнати обучителни преживявания, които изграждат истинско разбиране, а не повърхностна способност за генериране на код.</value></data>
+  <data name="Interest_Title" xml:space="preserve"><value>Изследователски интереси</value></data>
+  <data name="Interest_Text" xml:space="preserve"><value>Когнитивно натоварване при обучение по програмиране, стратегии за scaffolding за начинаещи програмисти, ролята на LLM като педагогически агенти, автоматизирано оценяване с формативна обратна връзка и проектиране на образователни технологии, които уважават начина, по който човешкото учене реално функционира.</value></data>
+</root>

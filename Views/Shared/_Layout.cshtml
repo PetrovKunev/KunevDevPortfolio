@@ -1,29 +1,73 @@
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@{
+    var currentCulture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+    var isEn = currentCulture == "en";
+    var otherCulture = isEn ? "bg" : "en";
+    var otherCultureLabel = isEn ? "BG" : "EN";
+    var currentCultureLabel = isEn ? "EN" : "BG";
+}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="@currentCulture">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@Localizer["Meta_Description"]" />
+    <meta name="author" content="Yavor Kunev" />
+    <title>@Localizer["Meta_Title"]</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="@Localizer["Meta_Title"]" />
+    <meta property="og:description" content="@Localizer["Meta_Description"]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kunev.dev" />
+    <meta property="og:image" content="https://kunev.dev/assets/og-image.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="@Localizer["Meta_Title"]" />
+    <meta name="twitter:description" content="@Localizer["Meta_Description"]" />
+    <link rel="alternate" hreflang="bg" href="@Url.Action(ViewContext.RouteData.Values["action"]?.ToString(), "Home", null, Context.Request.Scheme)?culture=bg" />
+    <link rel="alternate" hreflang="en" href="@Url.Action(ViewContext.RouteData.Values["action"]?.ToString(), "Home", null, Context.Request.Scheme)?culture=en" />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
-    <!-- Custom Google font-->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Google Fonts — Syne (display), Plus Jakarta Sans (body), JetBrains Mono (code) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/css/styles.css" rel="stylesheet" asp-append-version="true" />
+    <!-- Redesign overlay -->
+    <link href="~/css/redesign.css" rel="stylesheet" asp-append-version="true" />
     @RenderSection("Styles", required: false)
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "Person",
+        "name": "Yavor Kunev",
+        "url": "https://kunev.dev",
+        "email": "yavor@@kunev.dev",
+        "jobTitle": "AI & Education Researcher",
+        "description": "Doctoral researcher in AI-assisted learning. Building intelligent tools for programming education.",
+        "sameAs": [
+            "https://github.com/PetrovKunev",
+            "https://linkedin.com/in/yavor-kunev"
+        ],
+        "knowsAbout": ["Intelligent Tutoring Systems", "AI in Education", "Cognitive Load Theory", "ASP.NET Core", "C#"]
+    }
+    </script>
 </head>
 <body id="page-top">
     <!-- Navigation-->
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container px-3 px-lg-5">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                <span class="fw-bolder text-primary">kunev.dev</span>
+                <span class="fw-bolder">kunev.dev</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,41 +77,57 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">@Localizer["Nav_Home"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Resume">Resume</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Writing">@Localizer["Nav_Writing"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Projects">Projects</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Research">@Localizer["Nav_Research"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Projects">@Localizer["Nav_Projects"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Consulting">@Localizer["Nav_Consulting"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Contact">@Localizer["Nav_Contact"]</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-inline">
+                            <input type="hidden" name="culture" value="@otherCulture" />
+                            <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
+                            <button type="submit" class="btn btn-outline-primary btn-sm lang-switcher">
+                                <i class="bi bi-translate me-1"></i>@otherCultureLabel
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-	<!-- Main content area -->
-    <main role="main" class="container">
+
+    <!-- Main content area -->
+    <main role="main">
         @RenderBody()
     </main>
 
-    
-    <footer class="bg-white py-4 mt-auto">
+    <footer class="py-4 mt-auto">
         <div class="container px-3 px-lg-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">&copy; 2025 - kunev.dev</div></div>
-                <div class="col-auto">
-                    <a class="small text-decoration-none" asp-controller="Home" asp-action="Contact">Contact</a>
-                    <span class="mx-1">&middot;</span>
+                <div class="col-auto"><div class="small m-0">&copy; 2025 — kunev.dev</div></div>
+                <div class="col-auto d-flex align-items-center gap-3">
                     <a class="small text-decoration-none" href="mailto:yavor@kunev.dev">yavor@kunev.dev</a>
+                    <div class="social-links">
+                        <a href="https://github.com/PetrovKunev" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://linkedin.com/in/yavor-kunev" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Скриптове -->
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

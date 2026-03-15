@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <!-- Hero -->
+  <data name="Hero_Label" xml:space="preserve"><value>AI + EDUCATION</value></data>
+  <data name="Hero_Headline_1" xml:space="preserve"><value>AI that teaches, </value></data>
+  <data name="Hero_Headline_2" xml:space="preserve"><value>not just answers.</value></data>
+  <data name="Hero_Subheadline" xml:space="preserve"><value>I build intelligent tools for programming education — grounded in cognitive science, designed for real classrooms.</value></data>
+  <data name="Hero_CTA_Work" xml:space="preserve"><value>See My Work</value></data>
+  <data name="Hero_CTA_Talk" xml:space="preserve"><value>Let's Talk</value></data>
+  <data name="Hero_Credibility" xml:space="preserve"><value>Doctoral researcher in AI-assisted learning. Creator of CodeGrade.</value></data>
+  <!-- About -->
+  <data name="About_Label" xml:space="preserve"><value>ABOUT</value></data>
+  <data name="About_Title" xml:space="preserve"><value>Where AI meets the classroom</value></data>
+  <data name="About_P1" xml:space="preserve"><value>I'm a software engineer and doctoral researcher exploring how AI can make programming education more effective — not just more automated.</value></data>
+  <data name="About_P2" xml:space="preserve"><value>My work sits at the intersection of cognitive load theory, intelligent tutoring systems, and the practical realities of teaching code to beginners.</value></data>
+  <data name="About_P3" xml:space="preserve"><value>When I'm not researching, I build tools that put these ideas into practice.</value></data>
+</root>

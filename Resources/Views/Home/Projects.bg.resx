@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Page_Label" xml:space="preserve"><value>ПОРТФОЛИО</value></data>
+  <data name="Page_Title" xml:space="preserve"><value>Проекти</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Инструменти и платформи, които съм създал — всеки решава реален проблем в образованието или софтуерната разработка.</value></data>
+  <data name="Label_Problem" xml:space="preserve"><value>ПРОБЛЕМ</value></data>
+  <data name="Label_Approach" xml:space="preserve"><value>ПОДХОД</value></data>
+  <data name="Link_Live" xml:space="preserve"><value>Демо</value></data>
+  <data name="Link_Code" xml:space="preserve"><value>Код</value></data>
+  <data name="CodeGrade_Tagline" xml:space="preserve"><value>Автоматизирано оценяване на код за обучение по програмиране</value></data>
+  <data name="CodeGrade_Problem" xml:space="preserve"><value>Преподавателите прекарват часове в оценяване на студентски код. Обратната връзка идва твърде късно.</value></data>
+  <data name="CodeGrade_Approach" xml:space="preserve"><value>Платформа с Judge0 и ролеви достъп за студенти и преподаватели. Следващо: AI слой за педагогически коментари.</value></data>
+  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Сравнение на средни училища за българските семейства</value></data>
+  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Родителите се ориентират в сложни класирания без ясни инструменти за информиран избор.</value></data>
+  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Платформа, агрегираща профили на училища, балове за прием и информация за паралелки.</value></data>
+  <data name="AlgoViz_Tagline" xml:space="preserve"><value>Интерактивна визуализация на алгоритми за студенти</value></data>
+  <data name="AlgoViz_Problem" xml:space="preserve"><value>Студентите трудно изграждат ментални модели от статични описания в учебниците.</value></data>
+  <data name="AlgoViz_Approach" xml:space="preserve"><value>Анимирани визуализации стъпка по стъпка на алгоритми за сортиране, търсене и графи.</value></data>
+  <data name="CSVisualLab_Tagline" xml:space="preserve"><value>Визуална платформа за изучаване на концепции в компютърните науки</value></data>
+  <data name="CSVisualLab_Problem" xml:space="preserve"><value>Абстрактните концепции като структури от данни и сложност са трудни без визуално представяне.</value></data>
+  <data name="CSVisualLab_Approach" xml:space="preserve"><value>Интерактивни визуализации с анимации, разбиващи сложни теми на разбираеми визуални стъпки.</value></data>
+  <data name="AcademyLogos_Tagline" xml:space="preserve"><value>Образователна платформа за съдържание за академични институции и доставчици на курсове.</value></data>
+  <data name="EfficiencyHub_Tagline" xml:space="preserve"><value>Приложение за продуктивност и управление на задачи с чиста архитектура и цялостно тестване.</value></data>
+  <data name="More_Text" xml:space="preserve"><value>Повече проекти и експерименти в GitHub</value></data>
+  <data name="More_GitHub" xml:space="preserve"><value>GitHub профил</value></data>
+</root>

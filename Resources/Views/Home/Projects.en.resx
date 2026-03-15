@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Page_Label" xml:space="preserve"><value>PORTFOLIO</value></data>
+  <data name="Page_Title" xml:space="preserve"><value>Projects</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Tools and platforms I've built — each solving a real problem in education or software development.</value></data>
+  <data name="Label_Problem" xml:space="preserve"><value>PROBLEM</value></data>
+  <data name="Label_Approach" xml:space="preserve"><value>APPROACH</value></data>
+  <data name="Link_Live" xml:space="preserve"><value>Live Demo</value></data>
+  <data name="Link_Code" xml:space="preserve"><value>View Code</value></data>
+  <data name="CodeGrade_Tagline" xml:space="preserve"><value>Automated Code Assessment for Programming Education</value></data>
+  <data name="CodeGrade_Problem" xml:space="preserve"><value>Teachers spend hours grading student code. Feedback arrives too late to change learning outcomes.</value></data>
+  <data name="CodeGrade_Approach" xml:space="preserve"><value>Built a Judge0-powered platform with role-based access for students and teachers. Next: AI feedback layer for pedagogical commentary.</value></data>
+  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Secondary School Comparison for Bulgarian Families</value></data>
+  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Parents navigate complex admission scores without clear tooling for data-driven school choice.</value></data>
+  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Platform aggregating school profiles, admission scores, and program info — making the decision process transparent.</value></data>
+  <data name="AlgoViz_Tagline" xml:space="preserve"><value>Interactive Algorithm Visualization for CS Students</value></data>
+  <data name="AlgoViz_Problem" xml:space="preserve"><value>Students struggle to build mental models of how algorithms work from static textbook descriptions.</value></data>
+  <data name="AlgoViz_Approach" xml:space="preserve"><value>Step-by-step animated visualizations of sorting, searching, and graph algorithms with adjustable speed and data sets.</value></data>
+  <data name="CSVisualLab_Tagline" xml:space="preserve"><value>Visual Learning Platform for Computer Science Concepts</value></data>
+  <data name="CSVisualLab_Problem" xml:space="preserve"><value>Abstract CS concepts like data structures and complexity are hard to grasp without visual representation.</value></data>
+  <data name="CSVisualLab_Approach" xml:space="preserve"><value>Interactive visualizations with animations that break down complex CS topics into understandable visual steps.</value></data>
+  <data name="AcademyLogos_Tagline" xml:space="preserve"><value>Educational content platform for academic institutions and course providers.</value></data>
+  <data name="EfficiencyHub_Tagline" xml:space="preserve"><value>Productivity and task management application built with clean architecture principles and comprehensive testing.</value></data>
+  <data name="More_Text" xml:space="preserve"><value>More projects and experiments on GitHub</value></data>
+  <data name="More_GitHub" xml:space="preserve"><value>View GitHub Profile</value></data>
+</root>

@@ -1,206 +1,45 @@
-@model KunevDevPortfolio.ViewModels.ContactFormModel
+@inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = Localizer["Page_Title"].Value;
 }
 
-<section class="py-5">
+<section class="section-dark contact-section">
     <div class="container px-3 px-lg-5">
-        <!-- Contact form-->
-        <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-            <div class="text-center mb-5">
-                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                    <i class="bi bi-envelope"></i>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <div class="section-label">@Localizer["Page_Label"]</div>
+                    <h1 class="section-heading">@Localizer["Page_Title"]</h1>
+                    <p class="section-subtitle mx-auto">@Localizer["Page_Subtitle"]</p>
                 </div>
-                <h1 class="fw-bolder">Get in touch</h1>
-                <p class="lead fw-normal text-muted mb-0">Let's create together!</p>
-            </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6">
 
-                    <!-- Success & error messages -->
-                    @if (TempData["SuccessMessage"] != null)
-                    {
-                        <div class="alert alert-success text-center" role="alert">
-                            <div class="fw-bolder">@TempData["SuccessMessage"]</div>
+                <!-- Contact info cards -->
+                <div class="row g-3 mb-5">
+                    <div class="col-md-4">
+                        <div class="contact-info-card">
+                            <i class="bi bi-envelope-fill"></i>
+                            <h6>@Localizer["Other_Email"]</h6>
+                            <p><a href="mailto:yavor@kunev.dev" class="text-decoration-none">yavor@kunev.dev</a></p>
                         </div>
-                    }
-
-                    @if (TempData["ErrorMessage"] != null)
-                    {
-                        <div class="alert alert-danger text-center" role="alert">
-                            <div class="fw-bolder">@TempData["ErrorMessage"]</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info-card">
+                            <i class="bi bi-github"></i>
+                            <h6>@Localizer["Other_GitHub"]</h6>
+                            <p><a href="https://github.com/PetrovKunev" class="text-decoration-none" target="_blank">@Localizer["Other_GitHub_Link"]</a></p>
                         </div>
-                    }
-
-                    <form id="contactForm" asp-controller="Home" asp-action="SubmitContact" method="post" novalidate>
-                        @Html.AntiForgeryToken()
-
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control @(ViewData.ModelState["Name"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                   id="name"
-                                   asp-for="Name"
-                                   type="text"
-                                   placeholder="Enter your name..." />
-                            <label for="name">Full name</label>
-                            <span asp-validation-for="Name" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Email input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control @(ViewData.ModelState["Email"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                   id="email"
-                                   asp-for="Email"
-                                   type="email"
-                                   placeholder="name@example.com" />
-                            <label for="email">Email address</label>
-                            <span asp-validation-for="Email" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Phone input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control @(ViewData.ModelState["Phone"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                   id="phone"
-                                   asp-for="Phone"
-                                   type="tel"
-                                   placeholder="(123) 456-7890" />
-                            <label for="phone">Phone number (optional)</label>
-                            <span asp-validation-for="Phone" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Company input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control @(ViewData.ModelState["Company"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                   id="company"
-                                   asp-for="Company"
-                                   type="text"
-                                   placeholder="Company name..." />
-                            <label for="company">Company (optional)</label>
-                            <span asp-validation-for="Company" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Project type select-->
-                        <div class="form-floating mb-3">
-                            <select class="form-select @(ViewData.ModelState["ProjectType"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                    id="projectType"
-                                    asp-for="ProjectType">
-                                <option value="">Select project type...</option>
-                                <option value="Website">Website</option>
-                                <option value="Web Application">Web Application</option>
-                                <option value="E-commerce">E-commerce Store</option>
-                                <option value="Mobile App">Mobile Application</option>
-                                <option value="API Development">API Development</option>
-                                <option value="Consultation">Consultation</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <label for="projectType">Project type</label>
-                            <span asp-validation-for="ProjectType" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Budget range select-->
-                        <div class="form-floating mb-3">
-                            <select class="form-select @(ViewData.ModelState["Budget"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                    id="budget"
-                                    asp-for="Budget">
-                                <option value="">Select budget range...</option>
-                                <option value="Under �1,000">Under �1,000</option>
-                                <option value="�1,000 - �2,500">�1,000 - �2,500</option>
-                                <option value="�2,500 - �5,000">�2,500 - �5,000</option>
-                                <option value="�5,000+">�5,000+</option>
-                                <option value="Let's discuss">Let's discuss</option>
-                            </select>
-                            <label for="budget">Budget range (optional)</label>
-                            <span asp-validation-for="Budget" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Timeline select-->
-                        <div class="form-floating mb-3">
-                            <select class="form-select @(ViewData.ModelState["Timeline"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                    id="timeline"
-                                    asp-for="Timeline">
-                                <option value="">Select timeline...</option>
-                                <option value="ASAP">ASAP (within 1 week)</option>
-                                <option value="1-2 months">1-2 months</option>
-                                <option value="2-3 months">2-3 months</option>
-                                <option value="3+ months">3+ months</option>
-                                <option value="Flexible">Flexible</option>
-                            </select>
-                            <label for="timeline">Desired timeline (optional)</label>
-                            <span asp-validation-for="Timeline" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control @(ViewData.ModelState["Message"]?.Errors.Count > 0 ? "is-invalid" : "")"
-                                      id="message"
-                                      asp-for="Message"
-                                      placeholder="Tell me about your project..."
-                                      style="height: 10rem"></textarea>
-                            <label for="message">Message</label>
-                            <span asp-validation-for="Message" class="invalid-feedback"></span>
-                        </div>
-
-                        <!-- Submit Button-->
-                        <div class="d-grid">
-                            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">
-                                <i class="bi bi-send me-2"></i>
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Additional contact info section -->
-<section class="py-5 bg-light">
-    <div class="container px-3 px-lg-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6">
-                <div class="text-center">
-                    <h2 class="fw-bolder mb-4">Other ways to reach me</h2>
-                    <div class="row">
-                        <div class="col-md-4 mb-3">
-                            <div class="bg-white rounded-3 p-4 h-100">
-                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </div>
-                                <h6 class="fw-bolder">Email</h6>
-                                <p class="mb-0">
-                                    <a href="mailto:yavor@kunev.dev" class="text-decoration-none">yavor@kunev.dev</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="bg-white rounded-3 p-4 h-100">
-                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                    <i class="bi bi-github"></i>
-                                </div>
-                                <h6 class="fw-bolder">GitHub</h6>
-                                <p class="mb-0">
-                                    <a href="https://github.com/PetrovKunev" class="text-decoration-none" target="_blank">View my projects</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <div class="bg-white rounded-3 p-4 h-100">
-                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3">
-                                    <i class="bi bi-clock-fill"></i>
-                                </div>
-                                <h6 class="fw-bolder">Response Time</h6>
-                                <p class="mb-0 small">Mon-Fri: 9AM-6PM<br>Usually respond within 24 hours</p>
-                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info-card">
+                            <i class="bi bi-linkedin"></i>
+                            <h6>LinkedIn</h6>
+                            <p><a href="https://linkedin.com/in/yavor-kunev" class="text-decoration-none" target="_blank">yavor-kunev</a></p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
-
-@section Scripts {
-    <script src="~/js/contact-validation.js" asp-append-version="true"></script>
-}

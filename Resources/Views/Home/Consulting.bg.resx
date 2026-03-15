@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Page_Label" xml:space="preserve"><value>КОНСУЛТАЦИИ</value></data>
+  <data name="Page_Title" xml:space="preserve"><value>Работете с мен</value></data>
+  <data name="Page_Intro" xml:space="preserve"><value>Помагам на образователни институции, EdTech компании и изследователски екипи да интегрират AI смислено в работата си.</value></data>
+  <data name="Service1_Title" xml:space="preserve"><value>AI интеграция за платформи за обучение</value></data>
+  <data name="Service1_Desc" xml:space="preserve"><value>Интегриране на AI инструменти в платформи за обучение по начин, който реално подобрява резултатите — не просто ChatGPT обвивки.</value></data>
+  <data name="Service2_Title" xml:space="preserve"><value>Педагогически системи за обратна връзка</value></data>
+  <data name="Service2_Desc" xml:space="preserve"><value>Проектиране на педагогически обосновани системи за обратна връзка при обучение по програмиране, намаляващи когнитивното натоварване.</value></data>
+  <data name="Service3_Title" xml:space="preserve"><value>Локална AI инфраструктура</value></data>
+  <data name="Service3_Desc" xml:space="preserve"><value>Изграждане на локална AI инфраструктура за изследвания и институционална употреба — privacy-first, без vendor lock-in.</value></data>
+  <data name="Service4_Title" xml:space="preserve"><value>Консултиране по ITS архитектура</value></data>
+  <data name="Service4_Desc" xml:space="preserve"><value>Консултации по архитектурата на интелигентни системи за обучение и AI-подпомогнато оценяване.</value></data>
+  <data name="CTA_Title" xml:space="preserve"><value>Нека поговорим за вашия проект</value></data>
+  <data name="CTA_Text" xml:space="preserve"><value>Независимо дали сте EdTech стартъп, университетски отдел или училище, което иска да се модернизира — ще се радвам да чуя за вашата работа.</value></data>
+  <data name="CTA_Button" xml:space="preserve"><value>Свържете се</value></data>
+</root>

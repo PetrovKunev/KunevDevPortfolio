@@ -1,0 +1,34 @@
+@inject IViewLocalizer Localizer
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = Localizer["Page_Title"].Value;
+}
+
+<section class="section-dark">
+    <div class="container px-3 px-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-label">@Localizer["Page_Label"]</div>
+                <h1 class="section-heading mb-5">@Localizer["Page_Title"]</h1>
+
+                <div class="research-card">
+                    <div class="research-status">@Localizer["Status"]</div>
+                    <h3>@Localizer["Topic"]</h3>
+                    <p class="research-summary">@Localizer["Summary"]</p>
+                    <p class="research-summary mt-3">@Localizer["Summary_2"]</p>
+                    <div class="project-tech mt-4">
+                        <span>Cognitive Load Theory</span>
+                        <span>ICAP Framework</span>
+                        <span>Intelligent Tutoring Systems</span>
+                        <span>LLMs in Education</span>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h3 class="mb-3">@Localizer["Interest_Title"]</h3>
+                    <p style="color: var(--kd-text-secondary); line-height: 1.8;">@Localizer["Interest_Text"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
