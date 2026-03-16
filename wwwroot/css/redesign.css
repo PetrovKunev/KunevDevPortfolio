@@ -619,6 +619,12 @@ body::before {
 }
 
 /* ---------- Contact ---------- */
+.contact-section {
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+}
+
 .contact-section .form-control,
 .contact-section .form-select {
   background: var(--kd-bg-card);
