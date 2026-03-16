@@ -29,27 +29,40 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <!-- Page -->
   <data name="Page_Label" xml:space="preserve"><value>PORTFOLIO</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Projects</value></data>
-  <data name="Page_Subtitle" xml:space="preserve"><value>Tools and platforms I've built — each solving a real problem in education or software development.</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Tools and platforms I've built — each solving a real problem.</value></data>
   <data name="Label_Problem" xml:space="preserve"><value>PROBLEM</value></data>
   <data name="Label_Approach" xml:space="preserve"><value>APPROACH</value></data>
   <data name="Link_Live" xml:space="preserve"><value>Live Demo</value></data>
   <data name="Link_Code" xml:space="preserve"><value>View Code</value></data>
+  <!-- Featured: SchoolSelect -->
+  <data name="Featured_Badge" xml:space="preserve"><value>★ Flagship Project</value></data>
+  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Secondary School Comparison for Bulgarian Families</value></data>
+  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Parents navigate complex admission scores without clear tooling for data-driven school choice.</value></data>
+  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Platform aggregating school profiles, admission scores, and program info for informed school choice.</value></data>
+  <data name="SchoolSelect_CTA" xml:space="preserve"><value>View Project</value></data>
+  <data name="SchoolSelect_Stat_Users" xml:space="preserve"><value>registered users</value></data>
+  <data name="SchoolSelect_Stat_Plan" xml:space="preserve"><value>plan available</value></data>
+  <!-- Section headings -->
+  <data name="Section_AI_Title" xml:space="preserve"><value>AI &amp; Education</value></data>
+  <data name="Section_AI_Subtitle" xml:space="preserve"><value>Tools at the intersection of AI and programming education.</value></data>
+  <data name="Section_Personal_Title" xml:space="preserve"><value>Side Projects</value></data>
+  <data name="Section_Personal_Subtitle" xml:space="preserve"><value>Ideas built outside of working hours.</value></data>
+  <data name="Section_Client_Title" xml:space="preserve"><value>Client Projects</value></data>
+  <data name="Section_Client_Subtitle" xml:space="preserve"><value>Real projects built for clients.</value></data>
+  <!-- CodeGrade -->
   <data name="CodeGrade_Tagline" xml:space="preserve"><value>Automated Code Assessment for Programming Education</value></data>
   <data name="CodeGrade_Problem" xml:space="preserve"><value>Teachers spend hours grading student code. Feedback arrives too late to change learning outcomes.</value></data>
   <data name="CodeGrade_Approach" xml:space="preserve"><value>Built a Judge0-powered platform with role-based access for students and teachers. Next: AI feedback layer for pedagogical commentary.</value></data>
-  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Secondary School Comparison for Bulgarian Families</value></data>
-  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Parents navigate complex admission scores without clear tooling for data-driven school choice.</value></data>
-  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Platform aggregating school profiles, admission scores, and program info — making the decision process transparent.</value></data>
-  <data name="AlgoViz_Tagline" xml:space="preserve"><value>Interactive Algorithm Visualization for CS Students</value></data>
-  <data name="AlgoViz_Problem" xml:space="preserve"><value>Students struggle to build mental models of how algorithms work from static textbook descriptions.</value></data>
-  <data name="AlgoViz_Approach" xml:space="preserve"><value>Step-by-step animated visualizations of sorting, searching, and graph algorithms with adjustable speed and data sets.</value></data>
-  <data name="CSVisualLab_Tagline" xml:space="preserve"><value>Visual Learning Platform for Computer Science Concepts</value></data>
-  <data name="CSVisualLab_Problem" xml:space="preserve"><value>Abstract CS concepts like data structures and complexity are hard to grasp without visual representation.</value></data>
-  <data name="CSVisualLab_Approach" xml:space="preserve"><value>Interactive visualizations with animations that break down complex CS topics into understandable visual steps.</value></data>
-  <data name="AcademyLogos_Tagline" xml:space="preserve"><value>Educational content platform for academic institutions and course providers.</value></data>
-  <data name="EfficiencyHub_Tagline" xml:space="preserve"><value>Productivity and task management application built with clean architecture principles and comprehensive testing.</value></data>
+  <!-- Flow -->
+  <data name="Flow_Desc" xml:space="preserve"><value>Track income and expenses, plan your budget, and analyze your financial status.</value></data>
+  <!-- World Explorer -->
+  <data name="WorldExplorer_Desc" xml:space="preserve"><value>Interactive map for bookmarking visited and wishlist destinations around the world.</value></data>
+  <!-- AllSeasonBioGarden -->
+  <data name="BioGarden_Desc" xml:space="preserve"><value>E-commerce platform for smart hydroponic gardens with product catalog and online store.</value></data>
+  <!-- More -->
   <data name="More_Text" xml:space="preserve"><value>More projects and experiments on GitHub</value></data>
   <data name="More_GitHub" xml:space="preserve"><value>View GitHub Profile</value></data>
 </root>

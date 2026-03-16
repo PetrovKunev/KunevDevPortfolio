@@ -377,6 +377,132 @@ body::before {
   gap: 0.35rem;
 }
 
+/* ---------- Featured Project Card ---------- */
+.featured-project-card {
+  background: #0f1117;
+  border: 1px solid var(--kd-border);
+  border-left: 4px solid var(--kd-accent);
+  border-radius: var(--kd-radius);
+  padding: 2.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-family: var(--kd-font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #0f1117;
+  background: var(--kd-accent);
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.featured-status {
+  font-family: var(--kd-font-mono);
+  font-size: 0.7rem;
+  color: #10B981;
+  margin-bottom: 0.75rem;
+}
+.featured-status i { font-size: 0.45rem; vertical-align: middle; margin-right: 0.3rem; }
+
+.featured-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.featured-tagline {
+  color: var(--kd-text-secondary);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured-narrative {
+  margin: 1.25rem 0;
+}
+.featured-narrative-row {
+  padding: 0.75rem 0;
+}
+.featured-narrative-divider {
+  border-top: 1px solid var(--kd-border);
+}
+
+.featured-meta {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--kd-border);
+  border-radius: var(--kd-radius-sm);
+  padding: 1.5rem;
+}
+
+.featured-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.featured-stat-number {
+  font-family: var(--kd-font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--kd-accent);
+  line-height: 1.2;
+}
+
+.featured-stat-label {
+  font-size: 0.8rem;
+  color: var(--kd-text-muted);
+  margin-top: 0.2rem;
+}
+
+/* ---------- Project Section Headings ---------- */
+.projects-section {
+  margin-top: 5rem;
+}
+
+.projects-section-heading {
+  border-left: 3px solid var(--kd-accent);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projects-section-heading h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.projects-section-heading p {
+  color: var(--kd-text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ---------- Live Badge ---------- */
+.live-badge {
+  font-family: var(--kd-font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---------- Featured card responsive ---------- */
+@media (max-width: 991.98px) {
+  .featured-project-card { padding: 1.5rem; }
+  .featured-badge { position: static; display: inline-block; margin-bottom: 1rem; }
+  .featured-stats { gap: 1.5rem; }
+  .featured-meta { margin-top: 1.5rem; }
+}
+
 /* ---------- Consulting / Services ---------- */
 .service-item {
   display: flex;

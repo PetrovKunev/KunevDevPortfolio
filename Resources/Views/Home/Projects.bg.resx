@@ -29,27 +29,40 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <!-- Page -->
   <data name="Page_Label" xml:space="preserve"><value>ПОРТФОЛИО</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Проекти</value></data>
-  <data name="Page_Subtitle" xml:space="preserve"><value>Инструменти и платформи, които съм създал — всеки решава реален проблем в образованието или софтуерната разработка.</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Инструменти и платформи, които съм създал — всеки решава реален проблем.</value></data>
   <data name="Label_Problem" xml:space="preserve"><value>ПРОБЛЕМ</value></data>
   <data name="Label_Approach" xml:space="preserve"><value>ПОДХОД</value></data>
   <data name="Link_Live" xml:space="preserve"><value>Демо</value></data>
   <data name="Link_Code" xml:space="preserve"><value>Код</value></data>
+  <!-- Featured: SchoolSelect -->
+  <data name="Featured_Badge" xml:space="preserve"><value>★ Най-мащабен проект</value></data>
+  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Сравнение на средни училища за българските семейства</value></data>
+  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Родителите се ориентират в сложни класирания без ясни инструменти за информиран избор.</value></data>
+  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Платформа, агрегираща профили на училища, балове за прием и информация за паралелки за информиран избор.</value></data>
+  <data name="SchoolSelect_CTA" xml:space="preserve"><value>Разгледай проекта</value></data>
+  <data name="SchoolSelect_Stat_Users" xml:space="preserve"><value>регистрирани потребители</value></data>
+  <data name="SchoolSelect_Stat_Plan" xml:space="preserve"><value>план наличен</value></data>
+  <!-- Section headings -->
+  <data name="Section_AI_Title" xml:space="preserve"><value>AI &amp; Образование</value></data>
+  <data name="Section_AI_Subtitle" xml:space="preserve"><value>Инструменти на пресечната точка между AI и програмното обучение.</value></data>
+  <data name="Section_Personal_Title" xml:space="preserve"><value>Лични проекти</value></data>
+  <data name="Section_Personal_Subtitle" xml:space="preserve"><value>Side projects — идеи, реализирани извън работното време.</value></data>
+  <data name="Section_Client_Title" xml:space="preserve"><value>Клиентски проекти</value></data>
+  <data name="Section_Client_Subtitle" xml:space="preserve"><value>Реални проекти, създадени за клиенти.</value></data>
+  <!-- CodeGrade -->
   <data name="CodeGrade_Tagline" xml:space="preserve"><value>Автоматизирано оценяване на код за обучение по програмиране</value></data>
   <data name="CodeGrade_Problem" xml:space="preserve"><value>Преподавателите прекарват часове в оценяване на студентски код. Обратната връзка идва твърде късно.</value></data>
   <data name="CodeGrade_Approach" xml:space="preserve"><value>Платформа с Judge0 и ролеви достъп за студенти и преподаватели. Следващо: AI слой за педагогически коментари.</value></data>
-  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Сравнение на средни училища за българските семейства</value></data>
-  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Родителите се ориентират в сложни класирания без ясни инструменти за информиран избор.</value></data>
-  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Платформа, агрегираща профили на училища, балове за прием и информация за паралелки.</value></data>
-  <data name="AlgoViz_Tagline" xml:space="preserve"><value>Интерактивна визуализация на алгоритми за студенти</value></data>
-  <data name="AlgoViz_Problem" xml:space="preserve"><value>Студентите трудно изграждат ментални модели от статични описания в учебниците.</value></data>
-  <data name="AlgoViz_Approach" xml:space="preserve"><value>Анимирани визуализации стъпка по стъпка на алгоритми за сортиране, търсене и графи.</value></data>
-  <data name="CSVisualLab_Tagline" xml:space="preserve"><value>Визуална платформа за изучаване на концепции в компютърните науки</value></data>
-  <data name="CSVisualLab_Problem" xml:space="preserve"><value>Абстрактните концепции като структури от данни и сложност са трудни без визуално представяне.</value></data>
-  <data name="CSVisualLab_Approach" xml:space="preserve"><value>Интерактивни визуализации с анимации, разбиващи сложни теми на разбираеми визуални стъпки.</value></data>
-  <data name="AcademyLogos_Tagline" xml:space="preserve"><value>Образователна платформа за съдържание за академични институции и доставчици на курсове.</value></data>
-  <data name="EfficiencyHub_Tagline" xml:space="preserve"><value>Приложение за продуктивност и управление на задачи с чиста архитектура и цялостно тестване.</value></data>
+  <!-- Flow -->
+  <data name="Flow_Desc" xml:space="preserve"><value>Проследявайте приходи и разходи, планирайте бюджет и анализирайте финансовото си състояние.</value></data>
+  <!-- World Explorer -->
+  <data name="WorldExplorer_Desc" xml:space="preserve"><value>Интерактивна карта за маркиране на посетени и желани дестинации по света.</value></data>
+  <!-- AllSeasonBioGarden -->
+  <data name="BioGarden_Desc" xml:space="preserve"><value>E-commerce платформа за умни хидропонни градини с продуктов каталог и онлайн магазин.</value></data>
+  <!-- More -->
   <data name="More_Text" xml:space="preserve"><value>Повече проекти и експерименти в GitHub</value></data>
   <data name="More_GitHub" xml:space="preserve"><value>GitHub профил</value></data>
 </root>
