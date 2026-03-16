@@ -56,10 +56,20 @@
   <data name="CodeGrade_Tagline" xml:space="preserve"><value>Автоматизирано оценяване на код за обучение по програмиране</value></data>
   <data name="CodeGrade_Problem" xml:space="preserve"><value>Преподавателите прекарват часове в оценяване на студентски код. Обратната връзка идва твърде късно.</value></data>
   <data name="CodeGrade_Approach" xml:space="preserve"><value>Платформа с Judge0 и ролеви достъп за студенти и преподаватели. Следващо: AI слой за педагогически коментари.</value></data>
+  <!-- Algorithm Visualizer -->
+  <data name="AlgoViz_Desc" xml:space="preserve"><value>Интерактивна платформа за визуализация на алгоритми и структури от данни с контрол на скоростта и анализ на сложността.</value></data>
+  <data name="AlgoViz_Problem" xml:space="preserve"><value>Алгоритмите и структурите от данни са абстрактни концепции, които студентите трудно разбират само от текст и псевдокод.</value></data>
+  <data name="AlgoViz_Approach" xml:space="preserve"><value>Стъпка по стъпка визуализация на сортиращи, търсещи и графови алгоритми.</value></data>
+  <!-- CS Visual Lab -->
+  <data name="CSVisualLab_Desc" xml:space="preserve"><value>Интерактивна платформа за изучаване на компютърни науки с анимирани визуализации.</value></data>
+  <!-- AcademyLogos -->
+  <data name="AcademyLogos_Desc" xml:space="preserve"><value>Образователна платформа с курсове по математика, БЕЛ и програмиране за ученици от 5-7 клас.</value></data>
   <!-- Flow -->
   <data name="Flow_Desc" xml:space="preserve"><value>Проследявайте приходи и разходи, планирайте бюджет и анализирайте финансовото си състояние.</value></data>
   <!-- World Explorer -->
   <data name="WorldExplorer_Desc" xml:space="preserve"><value>Интерактивна карта за маркиране на посетени и желани дестинации по света.</value></data>
+  <!-- EfficiencyHub -->
+  <data name="EfficiencyHub_Desc" xml:space="preserve"><value>Приложение за управление на проекти и задачи.</value></data>
   <!-- AllSeasonBioGarden -->
   <data name="BioGarden_Desc" xml:space="preserve"><value>E-commerce платформа за умни хидропонни градини с продуктов каталог и онлайн магазин.</value></data>
   <!-- More -->
