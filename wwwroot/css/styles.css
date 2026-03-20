@@ -54,7 +54,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Plus Jakarta Sans";
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11771,4 +11771,49 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+/* ===== Custom Theme Properties ===== */
+:root {
+  --primary: #2563EB;
+  --accent: #10B981;
+  --dark: #1e293b;
+  --light-bg: #f8fafc;
+  --text-muted: #64748b;
+}
+
+/* ===== Service Cards ===== */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+}
+
+/* ===== Stats Row ===== */
+.stats-row {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+.stat-number {
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+/* ===== Language Switcher ===== */
+.lang-switcher {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 20px;
+}
+
+/* ===== Project Meta Label ===== */
+.project-meta-label {
+  font-weight: 700;
+  color: var(--dark);
 }
