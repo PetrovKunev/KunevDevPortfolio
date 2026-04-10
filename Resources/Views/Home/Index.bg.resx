@@ -40,7 +40,7 @@
   <!-- About -->
   <data name="About_Label" xml:space="preserve"><value>ЗА МЕН</value></data>
   <data name="About_Title" xml:space="preserve"><value>Където AI среща класната стая</value></data>
-  <data name="About_P1" xml:space="preserve"><value>Аз съм софтуерен инженер и докторант, който изследва как AI може да направи обучението по програмиране по-ефективно — не просто по-автоматизирано.</value></data>
+  <data name="About_P1" xml:space="preserve"><value>Аз съм софтуерен инженер и изследовател, който изследва как AI може да направи обучението по програмиране по-ефективно — не просто по-автоматизирано.</value></data>
   <data name="About_P2" xml:space="preserve"><value>Работата ми е на пресечната точка между теорията за когнитивното натоварване, интелигентните системи за обучение и практическите реалности на преподаването на код на начинаещи.</value></data>
   <data name="About_P3" xml:space="preserve"><value>Когато не изследвам, създавам инструменти, които превръщат тези идеи в практика.</value></data>
 </root>
