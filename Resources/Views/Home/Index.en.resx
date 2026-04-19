@@ -36,6 +36,7 @@
   <data name="Hero_Subheadline" xml:space="preserve"><value>I build intelligent tools for programming education — grounded in cognitive science, designed for real classrooms.</value></data>
   <data name="Hero_CTA_Work" xml:space="preserve"><value>See My Work</value></data>
   <data name="Hero_CTA_Talk" xml:space="preserve"><value>Let's Talk</value></data>
+  <data name="Hero_CTA_Research" xml:space="preserve"><value>Read the research</value></data>
   <data name="Hero_Credibility_Before" xml:space="preserve"><value>Doctoral researcher in AI-assisted learning. Creator of </value></data>
   <data name="Hero_Credibility_After" xml:space="preserve"><value>.</value></data>
   <!-- About -->

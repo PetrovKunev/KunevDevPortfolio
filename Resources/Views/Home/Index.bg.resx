@@ -36,6 +36,7 @@
   <data name="Hero_Subheadline" xml:space="preserve"><value>Създавам интелигентни инструменти за обучение по програмиране — базирани на когнитивната наука, проектирани за реални класни стаи.</value></data>
   <data name="Hero_CTA_Work" xml:space="preserve"><value>Вижте работата ми</value></data>
   <data name="Hero_CTA_Talk" xml:space="preserve"><value>Свържете се</value></data>
+  <data name="Hero_CTA_Research" xml:space="preserve"><value>Прочети изследването</value></data>
   <data name="Hero_Credibility_Before" xml:space="preserve"><value>Изследовател в областта на AI-подпомогнатото обучение. Създател на </value></data>
   <data name="Hero_Credibility_After" xml:space="preserve"><value>.</value></data>
   <!-- About -->

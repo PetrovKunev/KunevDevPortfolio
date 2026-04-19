@@ -7,20 +7,46 @@
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container px-3 px-lg-5">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="hero-label">@Localizer["Hero_Label"]</div>
+        <div class="running-head">
+            <span>№ 01 · kunev.dev / home</span>
+            <span class="rh-right">Research · Tools · Teaching</span>
+        </div>
+
+        <div class="hero-grid">
+            <div>
+                <div class="hero-eyebrow">@Localizer["Hero_Label"]</div>
                 <h1 class="hero-headline">
                     @Localizer["Hero_Headline_1"]
-                    <span class="accent">@Localizer["Hero_Headline_2"]</span>
+                    <span class="hl">@Localizer["Hero_Headline_2"]</span>
                 </h1>
                 <p class="hero-subheadline">@Localizer["Hero_Subheadline"]</p>
                 <div class="d-flex gap-3 flex-wrap hero-buttons mb-4">
-                    <a class="btn-accent" asp-controller="Home" asp-action="Projects">@Localizer["Hero_CTA_Work"]</a>
-                    <a class="btn-outline-light-custom" asp-controller="Home" asp-action="Contact">@Localizer["Hero_CTA_Talk"]</a>
+                    <a class="btn-accent" asp-controller="Home" asp-action="Research">
+                        @Localizer["Hero_CTA_Research"] <span aria-hidden="true">→</span>
+                    </a>
+                    <a class="btn-outline-light-custom" asp-controller="Home" asp-action="Projects">@Localizer["Hero_CTA_Work"]</a>
                 </div>
                 <p class="hero-credibility">@Localizer["Hero_Credibility_Before"]<a href="https://codegrade.kunev.dev/" target="_blank" rel="noopener">CodeGrade</a>@Localizer["Hero_Credibility_After"]</p>
             </div>
+
+            <aside class="hero-rail">
+                <div class="rail-group">
+                    <span class="rail-k">Role</span>
+                    <span class="rail-v">Doctoral <em>researcher</em></span>
+                </div>
+                <div class="rail-group">
+                    <span class="rail-k">Field</span>
+                    <span class="rail-v">Intelligent Tutoring Systems</span>
+                </div>
+                <div class="rail-group">
+                    <span class="rail-k">Creator</span>
+                    <span class="rail-v">CodeGrade</span>
+                </div>
+                <div class="rail-group">
+                    <span class="rail-k">Based in</span>
+                    <span class="rail-v">Sofia, BG</span>
+                </div>
+            </aside>
         </div>
     </div>
 </section>
@@ -29,7 +55,7 @@
 <section class="about-section">
     <div class="container px-3 px-lg-5">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <div class="section-label">@Localizer["About_Label"]</div>
                 <h2>@Localizer["About_Title"]</h2>
                 <p class="about-text">@Localizer["About_P1"]</p>
