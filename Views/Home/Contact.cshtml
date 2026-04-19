@@ -2,6 +2,9 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = Localizer["Page_Title"].Value;
+
+    // TODO: Replace with real Cal.com / Calendly URL after registration.
+    var bookingUrl = "https://cal.com/yavor-kunev";
 }
 
 <section class="section-dark contact-section">
@@ -19,6 +22,16 @@
                     <p class="section-subtitle">@Localizer["Page_Subtitle"]</p>
                 </div>
 
+                <div class="booking-cta">
+                    <div class="booking-kicker">@Localizer["Booking_Kicker"]</div>
+                    <h2>@Localizer["Booking_Title"]</h2>
+                    <p>@Localizer["Booking_Text"]</p>
+                    <a class="btn-accent d-inline-flex" href="@bookingUrl" target="_blank" rel="noopener">
+                        @Localizer["Booking_Button"] <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="section-label mb-3">@Localizer["Other_Ways"]</div>
                 <div class="row g-3 mb-5">
                     <div class="col-md-4">
                         <div class="contact-info-card">

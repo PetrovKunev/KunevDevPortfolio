@@ -32,6 +32,32 @@
   <data name="Page_Label" xml:space="preserve"><value>CONSULTING</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Work With Me</value></data>
   <data name="Page_Intro" xml:space="preserve"><value>I help educational institutions, EdTech companies, and research teams integrate AI meaningfully into their work.</value></data>
+  <data name="Packages_Label" xml:space="preserve"><value>PACKAGES</value></data>
+  <data name="Areas_Label" xml:space="preserve"><value>AREAS OF WORK</value></data>
+  <data name="Pkg1_Title" xml:space="preserve"><value>Strategy Call</value></data>
+  <data name="Pkg1_Price" xml:space="preserve"><value>€150</value></data>
+  <data name="Pkg1_Meta" xml:space="preserve"><value>60 minutes · one-off</value></data>
+  <data name="Pkg1_Desc" xml:space="preserve"><value>A focused second opinion on a specific AI or edtech decision — architecture, pedagogy gap, product direction. For people who have a real question and want an expert answer today, not next quarter.</value></data>
+  <data name="Pkg1_Inc1" xml:space="preserve"><value>Recorded call for internal reuse</value></data>
+  <data name="Pkg1_Inc2" xml:space="preserve"><value>Written email summary with recommendations and curated resources</value></data>
+  <data name="Pkg1_Inc3" xml:space="preserve"><value>One week of async email follow-up for clarifications</value></data>
+  <data name="Pkg1_CTA" xml:space="preserve"><value>Book strategy call</value></data>
+  <data name="Pkg2_Title" xml:space="preserve"><value>AI / EdTech Audit</value></data>
+  <data name="Pkg2_Price" xml:space="preserve"><value>€2,000 – 4,000</value></data>
+  <data name="Pkg2_Meta" xml:space="preserve"><value>1 – 2 weeks · fixed fee</value></data>
+  <data name="Pkg2_Desc" xml:space="preserve"><value>A deep review of a learning platform, feedback system, or AI integration. I assess what works, what doesn't, and why — grounded in cognitive science and real classroom use. Delivered as a prioritized findings document.</value></data>
+  <data name="Pkg2_Inc1" xml:space="preserve"><value>Audit document (~15 pages) with findings and a prioritized action plan</value></data>
+  <data name="Pkg2_Inc2" xml:space="preserve"><value>60-minute presentation session with your team</value></data>
+  <data name="Pkg2_Inc3" xml:space="preserve"><value>30 days of email support after delivery</value></data>
+  <data name="Pkg2_CTA" xml:space="preserve"><value>Request audit</value></data>
+  <data name="Pkg3_Title" xml:space="preserve"><value>Ongoing Advisory</value></data>
+  <data name="Pkg3_Price" xml:space="preserve"><value>from €1,500 / month</value></data>
+  <data name="Pkg3_Meta" xml:space="preserve"><value>monthly retainer · 3-month minimum</value></data>
+  <data name="Pkg3_Desc" xml:space="preserve"><value>Fractional research &amp; edtech advisor for teams building pedagogy-aware AI products. A steady rhythm of strategy calls and async feedback on product decisions, roadmap, and architecture.</value></data>
+  <data name="Pkg3_Inc1" xml:space="preserve"><value>4 hours / month via video call (split as you prefer)</value></data>
+  <data name="Pkg3_Inc2" xml:space="preserve"><value>Async feedback via email / Slack within 48 hours</value></data>
+  <data name="Pkg3_Inc3" xml:space="preserve"><value>Access to internal research notes and curated resources</value></data>
+  <data name="Pkg3_CTA" xml:space="preserve"><value>Discuss retainer</value></data>
   <data name="Service1_Title" xml:space="preserve"><value>AI Integration for Learning Platforms</value></data>
   <data name="Service1_Desc" xml:space="preserve"><value>Integrate AI tools into learning platforms in ways that actually improve learning outcomes — not just ChatGPT wrappers.</value></data>
   <data name="Service2_Title" xml:space="preserve"><value>Pedagogical Feedback Systems</value></data>

@@ -32,6 +32,32 @@
   <data name="Page_Label" xml:space="preserve"><value>КОНСУЛТАЦИИ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Работете с мен</value></data>
   <data name="Page_Intro" xml:space="preserve"><value>Помагам на образователни институции, EdTech компании и изследователски екипи да интегрират AI смислено в работата си.</value></data>
+  <data name="Packages_Label" xml:space="preserve"><value>ПАКЕТИ</value></data>
+  <data name="Areas_Label" xml:space="preserve"><value>ОБЛАСТИ НА РАБОТА</value></data>
+  <data name="Pkg1_Title" xml:space="preserve"><value>Стратегическа консултация</value></data>
+  <data name="Pkg1_Price" xml:space="preserve"><value>€150</value></data>
+  <data name="Pkg1_Meta" xml:space="preserve"><value>60 минути · еднократно</value></data>
+  <data name="Pkg1_Desc" xml:space="preserve"><value>Бързо второ мнение по конкретно решение в AI или edtech — избор на архитектура, pedagogy gap, оценка на продуктова посока. За хора, които имат въпрос и искат експертен отговор днес, не след месец.</value></data>
+  <data name="Pkg1_Inc1" xml:space="preserve"><value>Запис на разговора за вътрешна употреба</value></data>
+  <data name="Pkg1_Inc2" xml:space="preserve"><value>Кратко резюме по имейл с препоръки и релевантни ресурси</value></data>
+  <data name="Pkg1_Inc3" xml:space="preserve"><value>Едноседмична async follow-up по имейл за доизясняване</value></data>
+  <data name="Pkg1_CTA" xml:space="preserve"><value>Запази разговор</value></data>
+  <data name="Pkg2_Title" xml:space="preserve"><value>AI / EdTech одит</value></data>
+  <data name="Pkg2_Price" xml:space="preserve"><value>€2 000 – 4 000</value></data>
+  <data name="Pkg2_Meta" xml:space="preserve"><value>1 – 2 седмици · фиксирана цена</value></data>
+  <data name="Pkg2_Desc" xml:space="preserve"><value>Дълбок анализ на платформа за обучение, система за обратна връзка или AI интеграция. Оценявам какво работи, кое не и защо — в контекста на когнитивната наука и реалната употреба. Приключва с документ с приоритизирани препоръки.</value></data>
+  <data name="Pkg2_Inc1" xml:space="preserve"><value>Одитен документ (~15 стр.) с findings и приоритизиран план за действие</value></data>
+  <data name="Pkg2_Inc2" xml:space="preserve"><value>60-минутна презентационна сесия с екипа ви</value></data>
+  <data name="Pkg2_Inc3" xml:space="preserve"><value>30 дни email support след предаване</value></data>
+  <data name="Pkg2_CTA" xml:space="preserve"><value>Заяви одит</value></data>
+  <data name="Pkg3_Title" xml:space="preserve"><value>Продължаваща консултация</value></data>
+  <data name="Pkg3_Price" xml:space="preserve"><value>от €1 500 / месец</value></data>
+  <data name="Pkg3_Meta" xml:space="preserve"><value>месечен retainer · минимум 3 месеца</value></data>
+  <data name="Pkg3_Desc" xml:space="preserve"><value>Fractional research &amp; edtech advisor за екипи, които разработват pedagogy-aware AI продукти. Редовен ritmo от срещи и async обратна връзка върху продуктови решения, roadmap и архитектура.</value></data>
+  <data name="Pkg3_Inc1" xml:space="preserve"><value>4 часа на месец чрез видео среща (разделени по желание)</value></data>
+  <data name="Pkg3_Inc2" xml:space="preserve"><value>Async обратна връзка по имейл / Slack в рамките на 48 часа</value></data>
+  <data name="Pkg3_Inc3" xml:space="preserve"><value>Достъп до internal research notes и curated ресурси</value></data>
+  <data name="Pkg3_CTA" xml:space="preserve"><value>Обсъди retainer</value></data>
   <data name="Service1_Title" xml:space="preserve"><value>AI интеграция за платформи за обучение</value></data>
   <data name="Service1_Desc" xml:space="preserve"><value>Интегриране на AI инструменти в платформи за обучение по начин, който реално подобрява резултатите — не просто ChatGPT обвивки.</value></data>
   <data name="Service2_Title" xml:space="preserve"><value>Педагогически системи за обратна връзка</value></data>
