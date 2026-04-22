@@ -1,5 +1,4 @@
 using System.Globalization;
-using KunevDevPortfolio.Services;
 using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,10 +11,6 @@ builder.Services.AddLocalization(options => options.ResourcesPath = "Resources")
 builder.Services.AddMvc()
     .AddViewLocalization();
 
-// Register EmailService in DI container
-builder.Services.AddScoped<IEmailService, EmailService>();
-
-// Optional: Add logging
 builder.Services.AddLogging();
 
 var app = builder.Build();
