@@ -3,9 +3,9 @@
     Layout = "_Layout";
     ViewData["Title"] = Localizer["Page_Title"].Value;
 
-    // TODO: Replace with real Cal.com / Calendly URLs after registration.
-    // Can be split into three separate event URLs per package when ready.
-    var bookingUrl = "https://cal.com/yavor-kunev";
+    var strategyCallUrl = "https://cal.com/yavor-kunev/strategy-call";
+    var auditIntroUrl   = "https://cal.com/yavor-kunev/audit-intro";
+    var advisoryIntroUrl = "https://cal.com/yavor-kunev/advisory-intro";
 }
 
 <section class="section-dark">
@@ -36,7 +36,7 @@
                                 <li>@Localizer["Pkg1_Inc2"]</li>
                                 <li>@Localizer["Pkg1_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@bookingUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" href="@strategyCallUrl" target="_blank" rel="noopener">
                                 @Localizer["Pkg1_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
@@ -55,7 +55,7 @@
                                 <li>@Localizer["Pkg2_Inc2"]</li>
                                 <li>@Localizer["Pkg2_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@bookingUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" href="@auditIntroUrl" target="_blank" rel="noopener">
                                 @Localizer["Pkg2_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
@@ -74,7 +74,7 @@
                                 <li>@Localizer["Pkg3_Inc2"]</li>
                                 <li>@Localizer["Pkg3_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@bookingUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" href="@advisoryIntroUrl" target="_blank" rel="noopener">
                                 @Localizer["Pkg3_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
