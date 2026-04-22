@@ -39,6 +39,15 @@
   <data name="Hero_CTA_Research" xml:space="preserve"><value>Read the research</value></data>
   <data name="Hero_Credibility_Before" xml:space="preserve"><value>Doctoral researcher in AI-assisted learning. Creator of </value></data>
   <data name="Hero_Credibility_After" xml:space="preserve"><value>.</value></data>
+  <data name="RH_Right" xml:space="preserve"><value>Research · Tools · Teaching</value></data>
+  <data name="Rail_Role" xml:space="preserve"><value>Role</value></data>
+  <data name="Rail_Role_Value" xml:space="preserve"><value>Doctoral &lt;em&gt;researcher&lt;/em&gt;</value></data>
+  <data name="Rail_Field" xml:space="preserve"><value>Field</value></data>
+  <data name="Rail_Field_Value" xml:space="preserve"><value>Intelligent Tutoring Systems</value></data>
+  <data name="Rail_Creator" xml:space="preserve"><value>Creator</value></data>
+  <data name="Rail_Creator_Value" xml:space="preserve"><value>CodeGrade</value></data>
+  <data name="Rail_Based" xml:space="preserve"><value>Based in</value></data>
+  <data name="Rail_Based_Value" xml:space="preserve"><value>Sofia, BG</value></data>
   <!-- About -->
   <data name="About_Label" xml:space="preserve"><value>ABOUT</value></data>
   <data name="About_Title" xml:space="preserve"><value>Where AI meets the classroom</value></data>

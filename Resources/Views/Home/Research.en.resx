@@ -29,6 +29,7 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="RH_Right" xml:space="preserve"><value>Doctoral work in progress</value></data>
   <data name="Page_Label" xml:space="preserve"><value>RESEARCH</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Current Research</value></data>
   <data name="Status" xml:space="preserve"><value>In Progress</value></data>

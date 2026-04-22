@@ -39,6 +39,15 @@
   <data name="Hero_CTA_Research" xml:space="preserve"><value>Прочети изследването</value></data>
   <data name="Hero_Credibility_Before" xml:space="preserve"><value>Изследовател в областта на AI-подпомогнатото обучение. Създател на </value></data>
   <data name="Hero_Credibility_After" xml:space="preserve"><value>.</value></data>
+  <data name="RH_Right" xml:space="preserve"><value>Изследвания · Инструменти · Преподаване</value></data>
+  <data name="Rail_Role" xml:space="preserve"><value>Роля</value></data>
+  <data name="Rail_Role_Value" xml:space="preserve"><value>Изследовател</value></data>
+  <data name="Rail_Field" xml:space="preserve"><value>Сфера</value></data>
+  <data name="Rail_Field_Value" xml:space="preserve"><value>Intelligent Tutoring Systems</value></data>
+  <data name="Rail_Creator" xml:space="preserve"><value>Създател</value></data>
+  <data name="Rail_Creator_Value" xml:space="preserve"><value>CodeGrade</value></data>
+  <data name="Rail_Based" xml:space="preserve"><value>Базиран в</value></data>
+  <data name="Rail_Based_Value" xml:space="preserve"><value>София, БГ</value></data>
   <!-- About -->
   <data name="About_Label" xml:space="preserve"><value>ЗА МЕН</value></data>
   <data name="About_Title" xml:space="preserve"><value>Където AI среща класната стая</value></data>
