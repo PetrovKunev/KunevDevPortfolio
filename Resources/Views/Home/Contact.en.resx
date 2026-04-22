@@ -32,6 +32,11 @@
   <data name="Page_Label" xml:space="preserve"><value>CONTACT</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Get in Touch</value></data>
   <data name="Page_Subtitle" xml:space="preserve"><value>Have a project in mind, a research collaboration, or just want to talk about AI in education? I'd love to hear from you.</value></data>
+  <data name="Booking_Kicker" xml:space="preserve"><value>Fastest way</value></data>
+  <data name="Booking_Title" xml:space="preserve"><value>Book a 30-minute call</value></data>
+  <data name="Booking_Text" xml:space="preserve"><value>No commitment. If you have a specific project, a research idea, or a question about AI in education — pick an open slot and let's talk.</value></data>
+  <data name="Booking_Button" xml:space="preserve"><value>Pick a time</value></data>
+  <data name="Other_Ways" xml:space="preserve"><value>OTHER WAYS</value></data>
   <data name="Form_Name" xml:space="preserve"><value>Full name</value></data>
   <data name="Form_Email" xml:space="preserve"><value>Email address</value></data>
   <data name="Form_Message" xml:space="preserve"><value>Your message</value></data>

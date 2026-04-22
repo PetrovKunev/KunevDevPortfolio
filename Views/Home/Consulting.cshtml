@@ -2,53 +2,126 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = Localizer["Page_Title"].Value;
+
+    var strategyCallUrl = "https://cal.com/yavor-kunev/strategy-call";
+    var auditIntroUrl   = "https://cal.com/yavor-kunev/audit-intro";
+    var advisoryIntroUrl = "https://cal.com/yavor-kunev/advisory-intro";
 }
 
 <section class="section-dark">
     <div class="container px-3 px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
+        <div class="running-head">
+            <span>№ 05 · kunev.dev / consulting</span>
+            <span class="rh-right">AI in education · engagements</span>
+        </div>
+
+        <div class="row justify-content-start">
+            <div class="col-lg-9">
                 <div class="section-label">@Localizer["Page_Label"]</div>
                 <h1 class="section-heading mb-4">@Localizer["Page_Title"]</h1>
                 <p class="section-subtitle mb-5">@Localizer["Page_Intro"]</p>
 
-                <div class="service-item">
-                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
-                    <div>
-                        <h4>@Localizer["Service1_Title"]</h4>
-                        <p>@Localizer["Service1_Desc"]</p>
+                <div class="section-label mt-5 mb-3">@Localizer["Packages_Label"]</div>
+                <div class="package-list">
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Pkg1_Title"]</h3>
+                                <span class="package-price">@Localizer["Pkg1_Price"]</span>
+                                <p class="package-meta">@Localizer["Pkg1_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Pkg1_Desc"]</p>
+                            <ul class="package-includes">
+                                <li>@Localizer["Pkg1_Inc1"]</li>
+                                <li>@Localizer["Pkg1_Inc2"]</li>
+                                <li>@Localizer["Pkg1_Inc3"]</li>
+                            </ul>
+                            <a class="btn-accent d-inline-flex" href="@strategyCallUrl" target="_blank" rel="noopener">
+                                @Localizer["Pkg1_CTA"] <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Pkg2_Title"]</h3>
+                                <span class="package-price">@Localizer["Pkg2_Price"]</span>
+                                <p class="package-meta">@Localizer["Pkg2_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Pkg2_Desc"]</p>
+                            <ul class="package-includes">
+                                <li>@Localizer["Pkg2_Inc1"]</li>
+                                <li>@Localizer["Pkg2_Inc2"]</li>
+                                <li>@Localizer["Pkg2_Inc3"]</li>
+                            </ul>
+                            <a class="btn-accent d-inline-flex" href="@auditIntroUrl" target="_blank" rel="noopener">
+                                @Localizer["Pkg2_CTA"] <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Pkg3_Title"]</h3>
+                                <span class="package-price">@Localizer["Pkg3_Price"]</span>
+                                <p class="package-meta">@Localizer["Pkg3_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Pkg3_Desc"]</p>
+                            <ul class="package-includes">
+                                <li>@Localizer["Pkg3_Inc1"]</li>
+                                <li>@Localizer["Pkg3_Inc2"]</li>
+                                <li>@Localizer["Pkg3_Inc3"]</li>
+                            </ul>
+                            <a class="btn-accent d-inline-flex" href="@advisoryIntroUrl" target="_blank" rel="noopener">
+                                @Localizer["Pkg3_CTA"] <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
-                    <div>
-                        <h4>@Localizer["Service2_Title"]</h4>
-                        <p>@Localizer["Service2_Desc"]</p>
+                <div class="section-label mt-5 mb-3">@Localizer["Areas_Label"]</div>
+                <div class="services-list">
+                    <div class="service-item">
+                        <div class="service-arrow"></div>
+                        <div>
+                            <h4>@Localizer["Service1_Title"]</h4>
+                            <p>@Localizer["Service1_Desc"]</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-arrow"></div>
+                        <div>
+                            <h4>@Localizer["Service2_Title"]</h4>
+                            <p>@Localizer["Service2_Desc"]</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-arrow"></div>
+                        <div>
+                            <h4>@Localizer["Service3_Title"]</h4>
+                            <p>@Localizer["Service3_Desc"]</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-arrow"></div>
+                        <div>
+                            <h4>@Localizer["Service4_Title"]</h4>
+                            <p>@Localizer["Service4_Desc"]</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="service-item">
-                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
-                    <div>
-                        <h4>@Localizer["Service3_Title"]</h4>
-                        <p>@Localizer["Service3_Desc"]</p>
-                    </div>
-                </div>
-
-                <div class="service-item">
-                    <div class="service-arrow"><i class="bi bi-arrow-right"></i></div>
-                    <div>
-                        <h4>@Localizer["Service4_Title"]</h4>
-                        <p>@Localizer["Service4_Desc"]</p>
-                    </div>
-                </div>
-
-                <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-border);">
-                    <h3 class="mb-3">@Localizer["CTA_Title"]</h3>
-                    <p style="color: var(--kd-text-secondary);">@Localizer["CTA_Text"]</p>
-                    <a class="btn-accent mt-3 d-inline-block" asp-controller="Home" asp-action="Contact">
-                        <i class="bi bi-calendar-check me-2"></i>@Localizer["CTA_Button"]
+                <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-rule);">
+                    <div class="section-label">Next step</div>
+                    <h3 style="font-family: var(--kd-font-display); font-weight: 500; font-size: 1.8rem; letter-spacing: -0.015em; margin-bottom: 1rem;">@Localizer["CTA_Title"]</h3>
+                    <p style="font-family: var(--kd-font-body); color: var(--kd-ink-2); line-height: 1.65; max-width: 58ch;">@Localizer["CTA_Text"]</p>
+                    <a class="btn-accent mt-3 d-inline-flex" asp-controller="Home" asp-action="Contact">
+                        @Localizer["CTA_Button"] <span aria-hidden="true">→</span>
                     </a>
                 </div>
             </div>

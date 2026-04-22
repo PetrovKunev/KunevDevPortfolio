@@ -2,43 +2,58 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = Localizer["Page_Title"].Value;
+
+    var bookingUrl = "https://cal.com/yavor-kunev/strategy-call";
 }
 
 <section class="section-dark contact-section">
     <div class="container px-3 px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="text-center mb-5">
+        <div class="running-head">
+            <span>№ 06 · kunev.dev / contact</span>
+            <span class="rh-right">Reach out</span>
+        </div>
+
+        <div class="row justify-content-start">
+            <div class="col-lg-10">
+                <div class="mb-5">
                     <div class="section-label">@Localizer["Page_Label"]</div>
                     <h1 class="section-heading">@Localizer["Page_Title"]</h1>
-                    <p class="section-subtitle mx-auto">@Localizer["Page_Subtitle"]</p>
+                    <p class="section-subtitle">@Localizer["Page_Subtitle"]</p>
                 </div>
 
-                <!-- Contact info cards -->
+                <div class="booking-cta">
+                    <div class="booking-kicker">@Localizer["Booking_Kicker"]</div>
+                    <h2>@Localizer["Booking_Title"]</h2>
+                    <p>@Localizer["Booking_Text"]</p>
+                    <a class="btn-accent d-inline-flex" href="@bookingUrl" target="_blank" rel="noopener">
+                        @Localizer["Booking_Button"] <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="section-label mb-3">@Localizer["Other_Ways"]</div>
                 <div class="row g-3 mb-5">
                     <div class="col-md-4">
                         <div class="contact-info-card">
-                            <i class="bi bi-envelope-fill"></i>
+                            <i class="bi bi-envelope"></i>
                             <h6>@Localizer["Other_Email"]</h6>
-                            <p><a href="mailto:yavor@kunev.dev" class="text-decoration-none">yavor@kunev.dev</a></p>
+                            <p><a href="mailto:yavor@kunev.dev">yavor@kunev.dev</a></p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="contact-info-card">
                             <i class="bi bi-github"></i>
                             <h6>@Localizer["Other_GitHub"]</h6>
-                            <p><a href="https://github.com/PetrovKunev" class="text-decoration-none" target="_blank">@Localizer["Other_GitHub_Link"]</a></p>
+                            <p><a href="https://github.com/PetrovKunev" target="_blank">@Localizer["Other_GitHub_Link"]</a></p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="contact-info-card">
                             <i class="bi bi-linkedin"></i>
                             <h6>LinkedIn</h6>
-                            <p><a href="https://linkedin.com/in/yavor-kunev" class="text-decoration-none" target="_blank">yavor-kunev</a></p>
+                            <p><a href="https://linkedin.com/in/yavor-kunev" target="_blank">yavor-kunev</a></p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

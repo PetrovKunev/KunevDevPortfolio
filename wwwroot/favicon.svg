@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect width="48" height="48" rx="10" fill="#2dd4bf"/>
-  <text x="24" y="33" text-anchor="middle"
-        font-family="'Arial Black', sans-serif"
-        font-weight="900" font-size="26" fill="#0f1117">K</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>kunev.dev</title>
+  <rect width="64" height="64" fill="#f3efe7"></rect>
+  <path d="M16 12 L22 12 L22 30 L38 12 L46 12 L30 30 L48 52 L40 52 L26 34 L22 38 L22 52 L16 52 Z" fill="#14161a"></path>
+  <circle cx="50" cy="50" r="3.5" fill="#d94a1f"></circle>
 </svg>

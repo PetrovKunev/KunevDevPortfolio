@@ -32,6 +32,11 @@
   <data name="Page_Label" xml:space="preserve"><value>КОНТАКТ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Свържете се</value></data>
   <data name="Page_Subtitle" xml:space="preserve"><value>Имате проект, изследователско сътрудничество или просто искате да поговорим за AI в образованието? Ще се радвам да чуя от вас.</value></data>
+  <data name="Booking_Kicker" xml:space="preserve"><value>Най-бърз начин</value></data>
+  <data name="Booking_Title" xml:space="preserve"><value>Запази 30-минутен разговор</value></data>
+  <data name="Booking_Text" xml:space="preserve"><value>Без ангажимент. Ако имате конкретен проект, идея за изследване или въпрос за AI в образованието — избери свободен слот и поговаряме.</value></data>
+  <data name="Booking_Button" xml:space="preserve"><value>Избери час</value></data>
+  <data name="Other_Ways" xml:space="preserve"><value>ДРУГИ НАЧИНИ</value></data>
   <data name="Form_Name" xml:space="preserve"><value>Пълно име</value></data>
   <data name="Form_Email" xml:space="preserve"><value>Имейл адрес</value></data>
   <data name="Form_Message" xml:space="preserve"><value>Вашето съобщение</value></data>
