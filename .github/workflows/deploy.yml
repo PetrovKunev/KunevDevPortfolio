@@ -1,0 +1,50 @@
+name: Deploy to SmarterASP.NET
+
+# Автоматичен деплой при push към main. Може и ръчно от таба Actions.
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+# Не пускай два деплоя едновременно.
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  REMOTE_DIR: '.'   # ← ще се фиксира след диагностиката (Стъпка 5 от DEPLOY_SMARTERASP.md)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Publish
+        run: dotnet publish -c Release -o ./publish --no-restore
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      # ВРЕМЕННО: диагностика на FTP структурата, за да установим REMOTE_DIR.
+      # Ще бъде заменена със същинския деплой, щом видим къде ни пуска FTP.
+      - name: List FTP structure (temporary diagnostic)
+        run: |
+          lftp -c "
+          set ftp:ssl-allow no
+          open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
+          echo '=== PWD ==='; pwd
+          echo '=== listing ==='; cls -l
+          " || true
