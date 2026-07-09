@@ -60,8 +60,8 @@ jobs:
 
       # Синхронизирай → изтрий app_offline (сайтът се вдига).
       #  --no-perms  : SmarterASP FTP НЕ поддържа SITE CHMOD (иначе chmod грешки чупят деплоя).
+      #  --delete    : чисти остарели файлове, за да съвпада сървърът с билда.
       #  -X 'appsettings*.json' + --exclude 'logs/' : НИКОГА не пипа конфига/логовете на сървъра.
-      # TODO: върни --delete след потвърдено първо пускане (Стъпка 7 от DEPLOY_SMARTERASP.md).
       - name: Deploy over FTP
         run: |
           set -o pipefail
@@ -72,7 +72,7 @@ jobs:
           set net:max-retries 3
           set net:reconnect-interval-base 5
           open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
-          mirror -R --no-perms --parallel=4 --verbose -X app_offline.htm -X 'appsettings*.json' --exclude 'logs/' ./publish/ '${{ env.REMOTE_DIR }}'
+          mirror -R --no-perms --delete --parallel=4 --verbose -X app_offline.htm -X 'appsettings*.json' --exclude 'logs/' ./publish/ '${{ env.REMOTE_DIR }}'
           rm -f '${{ env.REMOTE_DIR }}/app_offline.htm'
           " 2>&1 | tee deploy.log
 
