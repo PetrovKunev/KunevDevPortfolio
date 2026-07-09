@@ -170,12 +170,30 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      # Ред: качи app_offline (спира сайта) → синхронизирай → изтрий app_offline (сайтът се вдига).
+      # Първо спри приложението: качи app_offline.htm и ИЗЧАКАЙ IIS да освободи
+      # заключените .dll. In-process хостингът ги пуска с няколко секунди закъснение —
+      # ако mirror тръгне веднага, първите ъплоуди удрят заключен файл и деплоят пада.
+      # (Доказано на живо: KunevDevPortfolio, run #3.)
+      - name: Stop app (upload app_offline.htm)
+        run: |
+          lftp -c "
+          set cmd:fail-exit yes
+          set ftp:ssl-allow no
+          set net:timeout 15
+          set net:max-retries 3
+          open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
+          put -O '${{ env.REMOTE_DIR }}' app_offline.htm
+          "
+          echo "Waiting for IIS to release file locks..."
+          sleep 15
+
+      # Синхронизирай → изтрий app_offline (сайтът се вдига).
       #  --no-perms  : SmarterASP FTP НЕ поддържа SITE CHMOD (иначе chmod грешки чупят деплоя).
       #  --delete    : чисти остарели файлове, за да съвпада сървърът с билда.
       #  -X 'appsettings*.json' + --exclude 'logs/' : НИКОГА не пипа конфига/тайните/логовете на сървъра.
       - name: Deploy over FTP
         run: |
+          set -o pipefail
           lftp -c "
           set cmd:fail-exit yes
           set ftp:ssl-allow no
@@ -183,10 +201,20 @@ jobs:
           set net:max-retries 3
           set net:reconnect-interval-base 5
           open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
-          put -O '${{ env.REMOTE_DIR }}' app_offline.htm
           mirror -R --no-perms --delete --parallel=4 --verbose -X app_offline.htm -X 'appsettings*.json' --exclude 'logs/' ./publish/ '${{ env.REMOTE_DIR }}'
           rm -f '${{ env.REMOTE_DIR }}/app_offline.htm'
-          "
+          " 2>&1 | tee deploy.log
+
+      # Логът в job summary — удобен за преглед в Actions UI без ровене в пълния лог.
+      - name: Publish deploy log to job summary
+        if: always()
+        run: |
+          {
+            echo '### Deploy log (tail)'
+            echo '```'
+            tail -c 20000 deploy.log 2>/dev/null || echo 'no deploy.log'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       # Предпазна мрежа: маха app_offline.htm при ВСЯКАКЪВ изход, за да не остане сайтът "в поддръжка".
       - name: Ensure site is back online
@@ -219,6 +247,8 @@ jobs:
 | `Login failed for user … (18456)` | Паролата в connection string ≠ реалната DB парола | Сложи точната парола в `appsettings.Production.json`; направи я само букви/цифри |
 | `cd: Access failed: 550 … syntax is incorrect` | Грешен `REMOTE_DIR` | Пусни диагностиката от Стъпка 5 и виж реалния път |
 | `chmod: … SITE CHMOD are not supported` + exit 1 | SmarterASP FTP няма SITE CHMOD | Добави `--no-perms` към `mirror` |
+| `mirror` пада веднага след качване на `app_offline.htm` | IIS още не е освободил заключените `.dll` (in-process) | Отделен step за `app_offline.htm` + `sleep 15` преди `mirror` (в шаблона по-горе) |
+| Празен commit не тригерира деплой | `paths-ignore` изисква поне един променен не-`.md` файл | Пусни ръчно от Actions (`workflow_dispatch`) или промени файл |
 | Сайтът стои на „в поддръжка" | `app_offline.htm` е останал (деплоят е паднал преди `rm`) | Стъпката `if: always()` го маха; или изтрий `app_offline.htm` ръчно |
 | Промените в env vars нямат ефект | Панелът на SmarterASP не храни .NET | Пиши в `appsettings.Production.json` на сървъра |
 | Сайтът пада след смяна на парола | Старият `appsettings.Production.json` на сървъра още има старата | Обнови файла на сървъра с новата стойност |
