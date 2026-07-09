@@ -15,7 +15,7 @@ concurrency:
 
 env:
   DOTNET_VERSION: '8.0.x'
-  REMOTE_DIR: '.'   # ← ще се фиксира след диагностиката (Стъпка 5 от DEPLOY_SMARTERASP.md)
+  REMOTE_DIR: '.'   # FTP ни пуска директно в site root (потвърдено с диагностиката)
 
 jobs:
   build-and-deploy:
@@ -35,16 +35,38 @@ jobs:
       - name: Publish
         run: dotnet publish -c Release -o ./publish --no-restore
 
+      # Страница "в поддръжка": качва се ПЪРВА, за да спре приложението и да отключи .dll
+      # (in-process хостингът ги държи заключени, докато сайтът работи).
+      - name: Create app_offline.htm
+        run: echo '<html><head><meta charset="utf-8"></head><body style="font-family:sans-serif;text-align:center;padding-top:3rem"><h1>Обновяваме сайта…</h1><p>Ще е достъпен след минута.</p></body></html>' > app_offline.htm
+
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      # ВРЕМЕННО: диагностика на FTP структурата, за да установим REMOTE_DIR.
-      # Ще бъде заменена със същинския деплой, щом видим къде ни пуска FTP.
-      - name: List FTP structure (temporary diagnostic)
+      # Ред: качи app_offline (спира сайта) → синхронизирай → изтрий app_offline (сайтът се вдига).
+      #  --no-perms  : SmarterASP FTP НЕ поддържа SITE CHMOD (иначе chmod грешки чупят деплоя).
+      #  -X 'appsettings*.json' + --exclude 'logs/' : НИКОГА не пипа конфига/логовете на сървъра.
+      # TODO: върни --delete след потвърдено първо пускане (Стъпка 7 от DEPLOY_SMARTERASP.md).
+      - name: Deploy over FTP
+        run: |
+          lftp -c "
+          set cmd:fail-exit yes
+          set ftp:ssl-allow no
+          set net:timeout 15
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
+          put -O '${{ env.REMOTE_DIR }}' app_offline.htm
+          mirror -R --no-perms --parallel=4 --verbose -X app_offline.htm -X 'appsettings*.json' --exclude 'logs/' ./publish/ '${{ env.REMOTE_DIR }}'
+          rm -f '${{ env.REMOTE_DIR }}/app_offline.htm'
+          "
+
+      # Предпазна мрежа: маха app_offline.htm при ВСЯКАКЪВ изход, за да не остане сайтът "в поддръжка".
+      - name: Ensure site is back online
+        if: always()
         run: |
           lftp -c "
           set ftp:ssl-allow no
           open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
-          echo '=== PWD ==='; pwd
-          echo '=== listing ==='; cls -l
+          rm -f '${{ env.REMOTE_DIR }}/app_offline.htm'
           " || true
