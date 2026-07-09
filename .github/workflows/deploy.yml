@@ -43,12 +43,28 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      # Ред: качи app_offline (спира сайта) → синхронизирай → изтрий app_offline (сайтът се вдига).
+      # Първо спри приложението: качи app_offline.htm и ИЗЧАКАЙ IIS да освободи
+      # заключените .dll (in-process хостингът ги пуска с няколко секунди закъснение).
+      - name: Stop app (upload app_offline.htm)
+        run: |
+          lftp -c "
+          set cmd:fail-exit yes
+          set ftp:ssl-allow no
+          set net:timeout 15
+          set net:max-retries 3
+          open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
+          put -O '${{ env.REMOTE_DIR }}' app_offline.htm
+          "
+          echo "Waiting for IIS to release file locks..."
+          sleep 15
+
+      # Синхронизирай → изтрий app_offline (сайтът се вдига).
       #  --no-perms  : SmarterASP FTP НЕ поддържа SITE CHMOD (иначе chmod грешки чупят деплоя).
       #  -X 'appsettings*.json' + --exclude 'logs/' : НИКОГА не пипа конфига/логовете на сървъра.
       # TODO: върни --delete след потвърдено първо пускане (Стъпка 7 от DEPLOY_SMARTERASP.md).
       - name: Deploy over FTP
         run: |
+          set -o pipefail
           lftp -c "
           set cmd:fail-exit yes
           set ftp:ssl-allow no
@@ -56,10 +72,20 @@ jobs:
           set net:max-retries 3
           set net:reconnect-interval-base 5
           open -u '${{ secrets.FTP_USERNAME }}','${{ secrets.FTP_PASSWORD }}' '${{ secrets.FTP_SERVER }}'
-          put -O '${{ env.REMOTE_DIR }}' app_offline.htm
           mirror -R --no-perms --parallel=4 --verbose -X app_offline.htm -X 'appsettings*.json' --exclude 'logs/' ./publish/ '${{ env.REMOTE_DIR }}'
           rm -f '${{ env.REMOTE_DIR }}/app_offline.htm'
-          "
+          " 2>&1 | tee deploy.log
+
+      # Логът отива в job summary — четим е през публичния Checks API (за разлика от пълните логове).
+      - name: Publish deploy log to job summary
+        if: always()
+        run: |
+          {
+            echo '### Deploy log (tail)'
+            echo '```'
+            tail -c 20000 deploy.log 2>/dev/null || echo 'no deploy.log'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       # Предпазна мрежа: маха app_offline.htm при ВСЯКАКЪВ изход, за да не остане сайтът "в поддръжка".
       - name: Ensure site is back online
