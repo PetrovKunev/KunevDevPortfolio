@@ -1,6 +1,6 @@
 name: Deploy to SmarterASP.NET
 
-# Автоматичен деплой при push към main. Може и ръчно от таба Actions.
+# Автоматичен деплой при push към main. Може и ръчно от таба Actions (workflow_dispatch).
 on:
   push:
     branches: [ main ]
