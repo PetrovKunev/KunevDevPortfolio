@@ -7,7 +7,7 @@
 <section class="section-dark">
     <div class="container px-3 px-lg-5">
         <div class="running-head">
-            <span>№ 04 · kunev.dev / projects</span>
+            <span>№ 04 · kunev.dev / proekti</span>
             <span class="rh-right">@Localizer["RH_Right"]</span>
         </div>
 
@@ -19,12 +19,11 @@
             </div>
         </div>
 
-        <!-- ═══ FEATURED: SchoolSelect ═══ -->
+        <!-- ═══ Case study 1: SchoolSelect ═══ -->
         <div class="featured-project-card">
-            <div class="featured-badge">@Localizer["Featured_Badge"]</div>
             <div class="row g-4 align-items-center">
                 <div class="col-lg-7">
-                    <div class="featured-status"><i class="bi bi-circle-fill"></i> In production</div>
+                    <div class="featured-status"><i class="bi bi-circle-fill"></i> @Localizer["Status_Production"]</div>
                     <h2 class="featured-title"><em>SchoolSelect</em>.net</h2>
                     <p class="featured-tagline">@Localizer["SchoolSelect_Tagline"]</p>
 
@@ -35,12 +34,17 @@
                         </div>
                         <div class="featured-narrative-divider"></div>
                         <div class="featured-narrative-row">
-                            <div class="narrative-label">@Localizer["Label_Approach"]</div>
-                            <p class="narrative-text">@Localizer["SchoolSelect_Approach"]</p>
+                            <div class="narrative-label">@Localizer["Label_Solution"]</div>
+                            <p class="narrative-text">@Localizer["SchoolSelect_Solution"]</p>
+                        </div>
+                        <div class="featured-narrative-divider"></div>
+                        <div class="featured-narrative-row">
+                            <div class="narrative-label">@Localizer["Label_Result"]</div>
+                            <p class="narrative-text">@Localizer["SchoolSelect_Result"]</p>
                         </div>
                     </div>
 
-                    <a href="https://schoolselect.net" target="_blank" class="btn-accent d-inline-flex mt-3">
+                    <a href="https://schoolselect.net" target="_blank" rel="noopener" class="btn-accent d-inline-flex mt-3">
                         @Localizer["SchoolSelect_CTA"] <span aria-hidden="true">→</span>
                     </a>
                 </div>
@@ -50,10 +54,6 @@
                             <div class="featured-stat">
                                 <div class="featured-stat-number"><em>150+</em></div>
                                 <div class="featured-stat-label">@Localizer["SchoolSelect_Stat_Users"]</div>
-                            </div>
-                            <div class="featured-stat">
-                                <div class="featured-stat-number"><em>Premium</em></div>
-                                <div class="featured-stat-label">@Localizer["SchoolSelect_Stat_Plan"]</div>
                             </div>
                         </div>
                         <div class="project-tech mt-4" style="padding: 1rem 0 0; border-top: 1px solid var(--kd-rule);">
@@ -67,206 +67,92 @@
             </div>
         </div>
 
-        <!-- ═══ SECTION 1: AI & Education ═══ -->
-        <div class="projects-section">
-            <div class="projects-section-heading" data-num="01 / Education">
-                <h2>@Localizer["Section_AI_Title"]</h2>
-                <p>@Localizer["Section_AI_Subtitle"]</p>
-            </div>
-            <div class="row g-4">
-                <!-- CodeGrade -->
-                <div class="col-lg-6">
-                    <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 01</span>
-                            <span class="live-badge">In production</span>
-                        </div>
-                        <h3><em>CodeGrade</em></h3>
-                        <p class="project-desc">@Localizer["CodeGrade_Tagline"]</p>
-                        <div class="project-narrative">
+        <!-- ═══ Case study 2: CodeGrade ═══ -->
+        <div class="featured-project-card">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <div class="featured-status"><i class="bi bi-circle-fill"></i> @Localizer["Status_Development"]</div>
+                    <h2 class="featured-title"><em>CodeGrade</em></h2>
+                    <p class="featured-tagline">@Localizer["CodeGrade_Tagline"]</p>
+
+                    <div class="featured-narrative">
+                        <div class="featured-narrative-row">
                             <div class="narrative-label">@Localizer["Label_Problem"]</div>
                             <p class="narrative-text">@Localizer["CodeGrade_Problem"]</p>
                         </div>
-                        <div class="project-narrative">
-                            <div class="narrative-label">@Localizer["Label_Approach"]</div>
-                            <p class="narrative-text">@Localizer["CodeGrade_Approach"]</p>
+                        <div class="featured-narrative-divider"></div>
+                        <div class="featured-narrative-row">
+                            <div class="narrative-label">@Localizer["Label_Solution"]</div>
+                            <p class="narrative-text">@Localizer["CodeGrade_Solution"]</p>
                         </div>
-                        <div class="project-tech">
+                        <div class="featured-narrative-divider"></div>
+                        <div class="featured-narrative-row">
+                            <div class="narrative-label">@Localizer["Label_Result"]</div>
+                            <p class="narrative-text">@Localizer["CodeGrade_Result"]</p>
+                        </div>
+                    </div>
+
+                    <a href="https://codegrade.kunev.dev/" target="_blank" rel="noopener" class="btn-accent d-inline-flex mt-3">
+                        @Localizer["CodeGrade_CTA"] <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="featured-meta">
+                        <div class="project-tech mt-4" style="padding: 1rem 0 0; border-top: 1px solid var(--kd-rule);">
                             <span>ASP.NET Core</span>
                             <span>MS SQL</span>
                             <span>Judge0</span>
                             <span>Tailwind</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://codegrade.kunev.dev/" target="_blank">codegrade.kunev.dev →</a>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Algorithm Visualizer -->
-                <div class="col-lg-6">
+        <!-- ═══ Още образователни инструменти ═══ -->
+        <div class="projects-section">
+            <div class="projects-section-heading" data-num="01 / Инструменти">
+                <h2>@Localizer["Section_More_Title"]</h2>
+                <p>@Localizer["Section_More_Subtitle"]</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 02</span>
-                            <span class="live-badge">In production</span>
-                        </div>
                         <h3><em>Algorithm</em> Visualizer</h3>
                         <p class="project-desc">@Localizer["AlgoViz_Desc"]</p>
-                        <div class="project-narrative">
-                            <div class="narrative-label">@Localizer["Label_Problem"]</div>
-                            <p class="narrative-text">@Localizer["AlgoViz_Problem"]</p>
-                        </div>
-                        <div class="project-narrative">
-                            <div class="narrative-label">@Localizer["Label_Approach"]</div>
-                            <p class="narrative-text">@Localizer["AlgoViz_Approach"]</p>
-                        </div>
                         <div class="project-tech">
                             <span>Next.js</span>
                             <span>React</span>
                             <span>TypeScript</span>
-                            <span>Vercel</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://vizualizer.vercel.app" target="_blank">vizualizer.vercel.app →</a>
+                            <a href="https://vizualizer.vercel.app" target="_blank" rel="noopener">vizualizer.vercel.app →</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- CS Visual Lab -->
-                <div class="col-lg-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 03</span>
-                            <span class="live-badge">In production</span>
-                        </div>
                         <h3>CS Visual Lab</h3>
                         <p class="project-desc">@Localizer["CSVisualLab_Desc"]</p>
                         <div class="project-tech">
                             <span>Next.js 14</span>
                             <span>Tailwind</span>
-                            <span>Framer Motion</span>
-                            <span>Vercel</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://csvisuallab.vercel.app/" target="_blank">csvisuallab.vercel.app →</a>
+                            <a href="https://csvisuallab.vercel.app/" target="_blank" rel="noopener">csvisuallab.vercel.app →</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- AcademyLogos -->
-                <div class="col-lg-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 04</span>
-                            <span class="live-badge">In production</span>
-                        </div>
                         <h3>AcademyLogos</h3>
                         <p class="project-desc">@Localizer["AcademyLogos_Desc"]</p>
                         <div class="project-tech">
                             <span>ASP.NET Core</span>
                             <span>EF Core</span>
-                            <span>Tailwind</span>
-                            <span>MS SQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://academylogos.com" target="_blank">academylogos.com →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ═══ SECTION 2: Side Projects ═══ -->
-        <div class="projects-section">
-            <div class="projects-section-heading" data-num="02 / Personal">
-                <h2>@Localizer["Section_Personal_Title"]</h2>
-                <p>@Localizer["Section_Personal_Subtitle"]</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 05</span>
-                            <span class="live-badge">In production</span>
-                        </div>
-                        <h3><em>Flow</em></h3>
-                        <p class="project-desc">@Localizer["Flow_Desc"]</p>
-                        <div class="project-tech">
-                            <span>ASP.NET Core</span>
-                            <span>C#</span>
-                            <span>Personal finance</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://flow.kunev.dev" target="_blank">flow.kunev.dev →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 06</span>
-                            <span class="live-badge">In production</span>
-                        </div>
-                        <h3>World Explorer</h3>
-                        <p class="project-desc">@Localizer["WorldExplorer_Desc"]</p>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>React</span>
-                            <span>Supabase</span>
-                            <span>Vercel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://world-blush.vercel.app/" target="_blank">world-blush.vercel.app →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 07</span>
-                            <span class="live-badge" style="color: var(--kd-muted)">Source on GitHub</span>
-                        </div>
-                        <h3>EfficiencyHub</h3>
-                        <p class="project-desc">@Localizer["EfficiencyHub_Desc"]</p>
-                        <div class="project-tech">
-                            <span>ASP.NET Core 8</span>
-                            <span>Razor Pages</span>
-                            <span>Identity</span>
-                            <span>xUnit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/PetrovKunev/EfficiencyHubApp" target="_blank">github.com/PetrovKunev →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ═══ SECTION 3: Client Projects ═══ -->
-        <div class="projects-section">
-            <div class="projects-section-heading" data-num="03 / Client">
-                <h2>@Localizer["Section_Client_Title"]</h2>
-                <p>@Localizer["Section_Client_Subtitle"]</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="project-card-new">
-                        <div class="card-head">
-                            <span>Project · 08</span>
-                            <span class="live-badge">In production</span>
-                        </div>
-                        <h3>AllSeasonBioGarden</h3>
-                        <p class="project-desc">@Localizer["BioGarden_Desc"]</p>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>React</span>
-                            <span>Supabase</span>
-                            <span>E-commerce</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.allseasonbiogarden.bg" target="_blank">allseasonbiogarden.bg →</a>
+                            <a href="https://academylogos.com" target="_blank" rel="noopener">academylogos.com →</a>
                         </div>
                     </div>
                 </div>
@@ -276,7 +162,7 @@
         <!-- More on GitHub -->
         <div class="text-start mt-5 pt-4" style="border-top: 1px solid var(--kd-rule);">
             <p class="text-muted mb-3" style="font-family: var(--kd-font-italic); font-size: 1.1rem;">@Localizer["More_Text"]</p>
-            <a href="https://github.com/PetrovKunev" target="_blank" class="btn-outline-light-custom">
+            <a href="https://github.com/PetrovKunev" target="_blank" rel="noopener" class="btn-outline-light-custom">
                 @Localizer["More_GitHub"] →
             </a>
         </div>
