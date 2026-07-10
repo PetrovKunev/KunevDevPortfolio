@@ -10,9 +10,9 @@
   --kd-ink-2:      #2b2d33;
   --kd-muted:      #6b6a64;
   --kd-rule:       #d9d3c4;
-  --kd-accent:     #d94a1f;   /* vermillion */
-  --kd-accent-2:   #0a7058;   /* forest */
-  --kd-accent-glow: rgba(217, 74, 31, 0.10);
+  --kd-accent:     #0f8a78;   /* muted teal (бранд #2dd4bf, приглушен за кремавия фон) */
+  --kd-accent-2:   #0a5c50;   /* deep teal */
+  --kd-accent-glow: rgba(15, 138, 120, 0.10);
 
   --kd-font-display: 'Fraunces', Georgia, serif;
   --kd-font-italic:  'Instrument Serif', Georgia, serif;
@@ -205,8 +205,8 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
 .hero-headline .hl {
   background: linear-gradient(180deg,
     transparent 62%,
-    rgba(217, 74, 31, 0.32) 62%,
-    rgba(217, 74, 31, 0.32) 92%,
+    rgba(45, 212, 191, 0.35) 62%,
+    rgba(45, 212, 191, 0.35) 92%,
     transparent 92%);
   padding: 0 0.08em;
   color: var(--kd-ink);
@@ -1152,9 +1152,10 @@ footer .small, footer .m-0 { color: var(--kd-muted); }
   border-radius: var(--kd-radius-sm);
 }
 .alert-danger {
+  /* Грешките остават червени независимо от акцентния цвят */
   background: rgba(217, 74, 31, 0.08);
   border-color: rgba(217, 74, 31, 0.25);
-  color: var(--kd-accent);
+  color: #b23c17;
   border-radius: var(--kd-radius-sm);
 }
 
