@@ -33,18 +33,18 @@
   <data name="Hero_Label" xml:space="preserve"><value>AI В ОБРАЗОВАНИЕТО</value></data>
   <data name="Hero_Headline_1" xml:space="preserve"><value>Помагам на училища и учители</value></data>
   <data name="Hero_Headline_2" xml:space="preserve"><value>да използват AI смислено.</value></data>
-  <data name="Hero_Subheadline" xml:space="preserve"><value>Учител по програмиране в гимназия, докторант в БАН по изкуствен интелект в образованието и разработчик на образователни инструменти.</value></data>
+  <data name="Hero_Subheadline" xml:space="preserve"><value>Учител по програмиране в гимназия, докторант в ИМИ–БАН в областта на изкуствения интелект в системите за обучение, и разработчик на образователни инструменти.</value></data>
   <data name="Hero_CTA_Services" xml:space="preserve"><value>Вижте обученията</value></data>
   <data name="Hero_CTA_Research" xml:space="preserve"><value>Прочети изследването</value></data>
-  <data name="Hero_Credibility_Before" xml:space="preserve"><value>Създател на </value></data>
-  <data name="Hero_Credibility_After" xml:space="preserve"><value> — автоматична проверка на код, използвана в реални класни стаи.</value></data>
+  <data name="Hero_Credibility_Before" xml:space="preserve"><value>Разработвам и внедрявам </value></data>
+  <data name="Hero_Credibility_After" xml:space="preserve"><value> — система за автоматична проверка на код в обучението по програмиране.</value></data>
   <data name="RH_Right" xml:space="preserve"><value>Преподаване · Изследвания · Инструменти</value></data>
   <data name="Rail_Role" xml:space="preserve"><value>Роля</value></data>
   <data name="Rail_Role_Value" xml:space="preserve"><value>Учител · Изследовател · Разработчик</value></data>
   <data name="Rail_Field" xml:space="preserve"><value>Сфера</value></data>
   <data name="Rail_Field_Value" xml:space="preserve"><value>AI в образованието</value></data>
   <data name="Rail_Creator" xml:space="preserve"><value>Създател</value></data>
-  <data name="Rail_Creator_Value" xml:space="preserve"><value>CodeGrade · SchoolSelect · BgVoice</value></data>
+  <data name="Rail_Creator_Value" xml:space="preserve"><value>CodeGrade · SchoolSelect</value></data>
   <data name="Rail_Based" xml:space="preserve"><value>Базиран в</value></data>
   <data name="Rail_Based_Value" xml:space="preserve"><value>София, БГ</value></data>
   <!-- Products -->
@@ -67,12 +67,12 @@
   <!-- Built -->
   <data name="Built_Label" xml:space="preserve"><value>КАКВО СЪМ ПОСТРОИЛ</value></data>
   <data name="Built_Title" xml:space="preserve"><value>Не говоря на теория</value></data>
-  <data name="Built_Text" xml:space="preserve"><value>CodeGrade проверява ученически код автоматично. SchoolSelect.net помага на родители да изберат училище. BgVoice чете български текст на глас. И трите са построени от мен — от идеята до сървъра.</value></data>
+  <data name="Built_Text" xml:space="preserve"><value>CodeGrade проверява ученически код автоматично. SchoolSelect.net помага на родители да изберат училище. И двете са построени от мен — от идеята до сървъра.</value></data>
   <data name="Built_CTA" xml:space="preserve"><value>Разгледайте проектите</value></data>
   <!-- About -->
   <data name="About_Label" xml:space="preserve"><value>ЗА МЕН</value></data>
   <data name="About_Title" xml:space="preserve"><value>Където AI среща класната стая</value></data>
   <data name="About_P1" xml:space="preserve"><value>Учител съм по програмиране в гимназия и докторант в Института по математика и информатика при БАН. Изследвам как изкуственият интелект може да направи обучението по-ефективно — не просто по-автоматизирано.</value></data>
   <data name="About_P2" xml:space="preserve"><value>Работя с училища, учители и обучителни центрове: обучение за колектива, одит на процесите или индивидуална консултация — винаги с ясен обхват и фиксирана цена.</value></data>
-  <data name="About_P3" xml:space="preserve"><value>А инструментите, за които говоря, строя сам — CodeGrade, SchoolSelect.net и BgVoice.</value></data>
+  <data name="About_P3" xml:space="preserve"><value>А инструментите, за които говоря, строя сам — CodeGrade и SchoolSelect.net.</value></data>
 </root>
