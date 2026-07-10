@@ -2,16 +2,12 @@
 @{
     Layout = "_Layout";
     ViewData["Title"] = Localizer["Page_Title"].Value;
-
-    var strategyCallUrl = "https://cal.com/yavor-kunev/strategy-call";
-    var auditIntroUrl   = "https://cal.com/yavor-kunev/audit-intro";
-    var advisoryIntroUrl = "https://cal.com/yavor-kunev/advisory-intro";
 }
 
 <section class="section-dark">
     <div class="container px-3 px-lg-5">
         <div class="running-head">
-            <span>№ 05 · kunev.dev / consulting</span>
+            <span>№ 05 · kunev.dev / uslugi</span>
             <span class="rh-right">@Localizer["RH_Right"]</span>
         </div>
 
@@ -36,7 +32,7 @@
                                 <li>@Localizer["Pkg1_Inc2"]</li>
                                 <li>@Localizer["Pkg1_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@strategyCallUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" asp-controller="Home" asp-action="Contact">
                                 @Localizer["Pkg1_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
@@ -55,7 +51,7 @@
                                 <li>@Localizer["Pkg2_Inc2"]</li>
                                 <li>@Localizer["Pkg2_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@auditIntroUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" asp-controller="Home" asp-action="Contact">
                                 @Localizer["Pkg2_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
@@ -74,50 +70,15 @@
                                 <li>@Localizer["Pkg3_Inc2"]</li>
                                 <li>@Localizer["Pkg3_Inc3"]</li>
                             </ul>
-                            <a class="btn-accent d-inline-flex" href="@advisoryIntroUrl" target="_blank" rel="noopener">
+                            <a class="btn-accent d-inline-flex" asp-controller="Home" asp-action="Contact">
                                 @Localizer["Pkg3_CTA"] <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="section-label mt-5 mb-3">@Localizer["Areas_Label"]</div>
-                <div class="services-list">
-                    <div class="service-item">
-                        <div class="service-arrow"></div>
-                        <div>
-                            <h4>@Localizer["Service1_Title"]</h4>
-                            <p>@Localizer["Service1_Desc"]</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-arrow"></div>
-                        <div>
-                            <h4>@Localizer["Service2_Title"]</h4>
-                            <p>@Localizer["Service2_Desc"]</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-arrow"></div>
-                        <div>
-                            <h4>@Localizer["Service3_Title"]</h4>
-                            <p>@Localizer["Service3_Desc"]</p>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-arrow"></div>
-                        <div>
-                            <h4>@Localizer["Service4_Title"]</h4>
-                            <p>@Localizer["Service4_Desc"]</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-rule);">
-                    <div class="section-label">Next step</div>
+                    <div class="section-label">@Localizer["CTA_Label"]</div>
                     <h3 style="font-family: var(--kd-font-display); font-weight: 500; font-size: 1.8rem; letter-spacing: -0.015em; margin-bottom: 1rem;">@Localizer["CTA_Title"]</h3>
                     <p style="font-family: var(--kd-font-body); color: var(--kd-ink-2); line-height: 1.65; max-width: 58ch;">@Localizer["CTA_Text"]</p>
                     <a class="btn-accent mt-3 d-inline-flex" asp-controller="Home" asp-action="Contact">
