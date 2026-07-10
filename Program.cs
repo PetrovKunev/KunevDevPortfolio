@@ -25,8 +25,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-// Request localization - BG default
-var supportedCultures = new[] { new CultureInfo("bg"), new CultureInfo("en") };
+// Сайтът е само на български
+var supportedCultures = new[] { new CultureInfo("bg") };
 app.UseRequestLocalization(new RequestLocalizationOptions
 {
     DefaultRequestCulture = new RequestCulture("bg"),

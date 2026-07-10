@@ -1,16 +1,10 @@
-@using System.Globalization
 @inject IViewLocalizer Localizer
 @{
-    var currentCulture = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
-    var isEn = currentCulture == "en";
-    var otherCulture = isEn ? "bg" : "en";
-    var otherCultureLabel = isEn ? "BG" : "EN";
-    var currentCultureLabel = isEn ? "EN" : "BG";
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "Index";
     bool IsActive(string action) => string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase);
 }
 <!DOCTYPE html>
-<html lang="@currentCulture">
+<html lang="bg">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -27,8 +21,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="@Localizer["Meta_Title"]" />
     <meta name="twitter:description" content="@Localizer["Meta_Description"]" />
-    <link rel="alternate" hreflang="bg" href="@Url.Action(currentAction, "Home", null, Context.Request.Scheme)?culture=bg" />
-    <link rel="alternate" hreflang="en" href="@Url.Action(currentAction, "Home", null, Context.Request.Scheme)?culture=en" />
     <!-- Favicon (Editorial Scholar, Option A) -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg?v=2" media="(prefers-color-scheme: dark)" />
@@ -85,26 +77,22 @@
                         <a class="nav-link @(IsActive("Index") ? "active" : "")" asp-controller="Home" asp-action="Index">@Localizer["Nav_Home"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @(IsActive("Writing") ? "active" : "")" asp-controller="Home" asp-action="Writing">@Localizer["Nav_Writing"]</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link @(IsActive("Research") ? "active" : "")" asp-controller="Home" asp-action="Research">@Localizer["Nav_Research"]</a>
+                        <a class="nav-link @(IsActive("Consulting") ? "active" : "")" asp-controller="Home" asp-action="Consulting">@Localizer["Nav_Consulting"]</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @(IsActive("Projects") ? "active" : "")" asp-controller="Home" asp-action="Projects">@Localizer["Nav_Projects"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @(IsActive("Consulting") ? "active" : "")" asp-controller="Home" asp-action="Consulting">@Localizer["Nav_Consulting"]</a>
+                        <a class="nav-link @(IsActive("Research") ? "active" : "")" asp-controller="Home" asp-action="Research">@Localizer["Nav_Research"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(IsActive("Writing") ? "active" : "")" asp-controller="Home" asp-action="Writing">@Localizer["Nav_Writing"]</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(IsActive("About") ? "active" : "")" asp-controller="Home" asp-action="About">@Localizer["Nav_About"]</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @(IsActive("Contact") ? "active" : "")" asp-controller="Home" asp-action="Contact">@Localizer["Nav_Contact"]</a>
-                    </li>
-                    <li class="nav-item ms-lg-3 d-flex align-items-center">
-                        <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-inline">
-                            <input type="hidden" name="culture" value="@otherCulture" />
-                            <input type="hidden" name="returnUrl" value="@Context.Request.Path" />
-                            <button type="submit" class="btn lang-switcher">@otherCultureLabel</button>
-                        </form>
                     </li>
                 </ul>
             </div>
@@ -125,11 +113,13 @@
             </div>
             <div class="row align-items-center justify-content-between flex-column flex-sm-row g-3">
                 <div class="col-auto"><div class="m-0">&copy; 2025–2026 · kunev.dev</div></div>
-                <div class="col-auto d-flex align-items-center gap-3">
+                <div class="col-auto d-flex align-items-center flex-wrap gap-3">
+                    <a class="text-decoration-none" href="tel:+359897942126"><i class="bi bi-telephone me-1" aria-hidden="true"></i>+359 89 79 42 126</a>
+                    <a class="text-decoration-none" href="viber://chat?number=%2B359897942126" aria-label="Viber"><i class="bi bi-chat-dots me-1" aria-hidden="true"></i>Viber</a>
                     <a class="text-decoration-none" href="mailto:yavor@kunev.dev">yavor@kunev.dev</a>
                     <div class="social-links">
-                        <a href="https://github.com/PetrovKunev" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                         <a href="https://linkedin.com/in/yavor-kunev" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/PetrovKunev" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
