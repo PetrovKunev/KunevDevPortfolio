@@ -1,7 +1,8 @@
 @inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = Localizer["Page_Title"].Value;
+    ViewData["MetaTitle"] = Localizer["Meta_Title"].Value;
+    ViewData["MetaDescription"] = Localizer["Meta_Desc"].Value;
 
     var phoneDisplay = "+359 89 79 42 126";
     var phoneHref = "tel:+359897942126";

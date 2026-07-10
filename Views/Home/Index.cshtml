@@ -1,7 +1,8 @@
 @inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Yavor Kunev";
+    ViewData["MetaTitle"] = Localizer["Meta_Title"].Value;
+    ViewData["MetaDescription"] = Localizer["Meta_Desc"].Value;
 }
 
 <!-- Hero Section -->

@@ -29,6 +29,8 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Meta_Title" xml:space="preserve"><value>За мен — Явор Кънев: учител, докторант в ИМИ–БАН, разработчик</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Учител по програмиране в гимназия, докторант в ИМИ–БАН в областта на изкуствения интелект в системите за обучение, разработчик на образователни инструменти.</value></data>
   <data name="Page_Label" xml:space="preserve"><value>За мен</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Учител, изследовател, разработчик</value></data>
   <data name="RH_Right" xml:space="preserve"><value>Явор Кънев</value></data>

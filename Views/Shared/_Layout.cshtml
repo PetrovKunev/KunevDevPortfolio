@@ -2,25 +2,30 @@
 @{
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "Index";
     bool IsActive(string action) => string.Equals(currentAction, action, StringComparison.OrdinalIgnoreCase);
+    var metaTitle = ViewData["MetaTitle"] as string ?? Localizer["Meta_Title"].Value;
+    var metaDescription = ViewData["MetaDescription"] as string ?? Localizer["Meta_Description"].Value;
+    var pageUrl = $"https://kunev.dev{Context.Request.Path}";
 }
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="@Localizer["Meta_Description"]" />
-    <meta name="author" content="Yavor Kunev" />
-    <title>@Localizer["Meta_Title"]</title>
-    <!-- Open Graph -->
-    <meta property="og:title" content="@Localizer["Meta_Title"]" />
-    <meta property="og:description" content="@Localizer["Meta_Description"]" />
+    <meta name="description" content="@metaDescription" />
+    <meta name="author" content="Явор Кънев" />
+    <title>@metaTitle</title>
+    <link rel="canonical" href="@pageUrl" />
+    <!-- Open Graph (Viber/Facebook споделяне) -->
+    <meta property="og:title" content="@metaTitle" />
+    <meta property="og:description" content="@metaDescription" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kunev.dev" />
+    <meta property="og:url" content="@pageUrl" />
+    <meta property="og:locale" content="bg_BG" />
     <meta property="og:image" content="https://kunev.dev/assets/og-image.png" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="@Localizer["Meta_Title"]" />
-    <meta name="twitter:description" content="@Localizer["Meta_Description"]" />
+    <meta name="twitter:title" content="@metaTitle" />
+    <meta name="twitter:description" content="@metaDescription" />
     <!-- Favicon (Editorial Scholar, Option A) -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg?v=2" media="(prefers-color-scheme: dark)" />
@@ -46,16 +51,17 @@
     {
         "@@context": "https://schema.org",
         "@@type": "Person",
-        "name": "Yavor Kunev",
+        "name": "Явор Кънев",
         "url": "https://kunev.dev",
         "email": "yavor@@kunev.dev",
-        "jobTitle": "AI & Education Researcher",
-        "description": "Doctoral researcher in AI-assisted learning. Building intelligent tools for programming education.",
+        "telephone": "+359897942126",
+        "jobTitle": "Учител по програмиране · Докторант в ИМИ–БАН",
+        "description": "Учител, докторант и разработчик — обучения, одити и консултации за смислено използване на изкуствен интелект в училище.",
         "sameAs": [
             "https://github.com/PetrovKunev",
             "https://linkedin.com/in/yavor-kunev"
         ],
-        "knowsAbout": ["Intelligent Tutoring Systems", "AI in Education", "Cognitive Load Theory", "ASP.NET Core", "C#"]
+        "knowsAbout": ["Изкуствен интелект в образованието", "Интелигентни системи за обучение", "Обучение по програмиране", "ASP.NET Core", "C#"]
     }
     </script>
 </head>
@@ -107,7 +113,7 @@
     <footer class="mt-auto">
         <div class="container px-3 px-lg-5">
             <div class="footer-running">
-                <span>№ 01 · Spring 2026</span>
+                <span>№ 01 · Лято 2026</span>
                 <span class="fr-mid">Yavor Kunev · Sofia, BG</span>
                 <span>kunev.dev</span>
             </div>

@@ -29,6 +29,9 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <!-- Meta -->
+  <data name="Meta_Title" xml:space="preserve"><value>Явор Кънев — AI обучения и консултации за училища и учители</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Обучение „AI за учители“ във вашето училище, AI одит и индивидуални консултации. Учител, докторант в ИМИ–БАН и разработчик — изкуствен интелект в училище, смислено.</value></data>
   <!-- Hero -->
   <data name="Hero_Label" xml:space="preserve"><value>AI В ОБРАЗОВАНИЕТО</value></data>
   <data name="Hero_Headline_1" xml:space="preserve"><value>Помагам на училища и учители</value></data>

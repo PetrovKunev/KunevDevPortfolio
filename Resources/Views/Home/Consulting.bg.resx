@@ -29,6 +29,8 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Meta_Title" xml:space="preserve"><value>Обучение „AI за учители“, AI одит на училище, консултации — цени</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Еднодневно обучение с AI за учители във вашето училище (част от 16-те акад. часа квалификация), AI одит на училище и индивидуални консултации. Ясни цени, фиксиран обхват.</value></data>
   <data name="RH_Right" xml:space="preserve"><value>AI в образованието · услуги</value></data>
   <data name="Page_Label" xml:space="preserve"><value>УСЛУГИ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Обучения и консултации</value></data>

@@ -29,6 +29,8 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Meta_Title" xml:space="preserve"><value>Изследвания — изкуствен интелект в системите за обучение</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Докторско изследване в ИМИ–БАН: модели и методи на изкуствения интелект за представяне на знания в интелигентни системи за обучение.</value></data>
   <data name="RH_Right" xml:space="preserve"><value>Текуща изследователска работа</value></data>
   <data name="Page_Label" xml:space="preserve"><value>ИЗСЛЕДВАНИЯ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Текущо изследване</value></data>

@@ -29,8 +29,8 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
-  <data name="Meta_Title" xml:space="preserve"><value>Явор Кънев — AI интеграция за образованието</value></data>
-  <data name="Meta_Description" xml:space="preserve"><value>AI интеграция за образованието — изследвания, инструменти и консултации. Изследовател, създаващ интелигентни системи за обучение по програмиране.</value></data>
+  <data name="Meta_Title" xml:space="preserve"><value>Явор Кънев — изкуствен интелект за училища и учители</value></data>
+  <data name="Meta_Description" xml:space="preserve"><value>Обучения, одити и консултации за смислено използване на изкуствен интелект в училище. Учител, докторант в ИМИ–БАН и разработчик.</value></data>
   <data name="Nav_Home" xml:space="preserve"><value>Начало</value></data>
   <data name="Nav_Writing" xml:space="preserve"><value>Статии</value></data>
   <data name="Nav_Research" xml:space="preserve"><value>Изследвания</value></data>

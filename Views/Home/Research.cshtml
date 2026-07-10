@@ -1,7 +1,8 @@
 @inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = Localizer["Page_Title"].Value;
+    ViewData["MetaTitle"] = Localizer["Meta_Title"].Value;
+    ViewData["MetaDescription"] = Localizer["Meta_Desc"].Value;
 }
 
 <section class="section-dark">
@@ -23,19 +24,19 @@
                     <p class="research-summary">@Localizer["Summary_2"]</p>
 
                     <blockquote class="pull-quote">
-                        An AI tutor should <em>reduce extraneous load</em>, not replace productive struggle.
+                        AI в обучението трябва да <em>намалява излишното натоварване</em>, а не да замества продуктивното усилие.
                     </blockquote>
 
                     <div class="project-tech" style="padding: 0.8rem 0 0; border-top: 1px solid var(--kd-rule); margin-top: 1.5rem;">
-                        <span>Cognitive Load Theory</span>
-                        <span>ICAP Framework</span>
-                        <span>Intelligent Tutoring Systems</span>
-                        <span>LLMs in Education</span>
+                        <span>Теория за когнитивното натоварване</span>
+                        <span>Рамка ICAP</span>
+                        <span>Интелигентни системи за обучение</span>
+                        <span>LLM в образованието</span>
                     </div>
                 </div>
 
                 <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-rule);">
-                    <div class="section-label">Adjacent interests</div>
+                    <div class="section-label">Още интереси</div>
                     <h3 style="font-family: var(--kd-font-display); font-weight: 500; font-size: 1.6rem; letter-spacing: -0.012em; margin-bottom: 1rem;">@Localizer["Interest_Title"]</h3>
                     <p style="font-family: var(--kd-font-body); color: var(--kd-ink-2); line-height: 1.7; font-size: 1.05rem; max-width: 62ch;">@Localizer["Interest_Text"]</p>
                 </div>
