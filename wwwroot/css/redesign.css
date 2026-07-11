@@ -8,7 +8,7 @@
   --kd-paper-2:    #ebe5d8;
   --kd-ink:        #14161a;
   --kd-ink-2:      #2b2d33;
-  --kd-muted:      #6b6a64;
+  --kd-muted:      #5f5e57;   /* WCAG AA (4.5:1) и върху paper-2 */
   --kd-rule:       #d9d3c4;
   --kd-accent:     #0f8a78;   /* muted teal (бранд #2dd4bf, приглушен за кремавия фон) */
   --kd-accent-2:   #0a5c50;   /* deep teal */
@@ -792,7 +792,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   font-family: var(--kd-font-mono);
   font-size: 0.85rem;
   letter-spacing: 0.06em;
-  color: var(--kd-accent);
+  color: var(--kd-accent-2);   /* дълбок teal — 4.5:1 за дребен текст */
   font-weight: 500;
   white-space: nowrap;
 }
@@ -849,7 +849,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   font-family: var(--kd-font-mono);
   font-size: 0.75rem;
   letter-spacing: 0.14em;
-  color: var(--kd-accent);
+  color: var(--kd-accent-2);   /* дълбок teal — 4.5:1 за дребен текст */
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
@@ -900,7 +900,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
 }
 @keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:.35} }
 
-.research-card h3 {
+.research-card h2 {
   font-family: var(--kd-font-display);
   font-weight: 500;
   font-size: clamp(1.6rem, 3vw, 2.2rem);
@@ -910,7 +910,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   max-width: 24ch;
   text-wrap: balance;
 }
-.research-card h3 em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
+.research-card h2 em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
 
 .research-card .research-summary {
   font-family: var(--kd-font-body);
@@ -983,7 +983,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   display: block;
 }
 
-.writing-item h4 {
+.writing-item h2 {
   font-family: var(--kd-font-display);
   font-weight: 500;
   font-size: 1.4rem;
@@ -993,7 +993,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   color: var(--kd-ink);
   max-width: 32ch;
 }
-.writing-item h4 em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
+.writing-item h2 em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
 
 .writing-item p {
   font-family: var(--kd-font-italic);
@@ -1073,7 +1073,7 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   margin-bottom: 0.85rem;
   display: block;
 }
-.contact-info-card h6 {
+.contact-info-card h3 {
   font-family: var(--kd-font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.14em;
