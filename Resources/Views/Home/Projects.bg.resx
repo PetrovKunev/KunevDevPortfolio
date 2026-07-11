@@ -29,51 +29,38 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <!-- Meta -->
+  <data name="Meta_Title" xml:space="preserve"><value>Проекти — CodeGrade и SchoolSelect | Явор Кънев</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Работещи образователни системи, построени от мен: CodeGrade — автоматична проверка на код, SchoolSelect.net — платформа за избор на училище.</value></data>
   <!-- Page -->
-  <data name="RH_Right" xml:space="preserve"><value>Каталог на проектите · 2024–2026</value></data>
-  <data name="Page_Label" xml:space="preserve"><value>ПОРТФОЛИО</value></data>
-  <data name="Page_Title" xml:space="preserve"><value>Проекти</value></data>
-  <data name="Page_Subtitle" xml:space="preserve"><value>Инструменти и платформи, които съм създал — всеки решава реален проблем.</value></data>
+  <data name="RH_Right" xml:space="preserve"><value>Построено · 2024–2026</value></data>
+  <data name="Page_Label" xml:space="preserve"><value>ПРОЕКТИ</value></data>
+  <data name="Page_Title" xml:space="preserve"><value>Какво съм построил</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Не говоря на теория — това са работещи системи, които съм проектирал, разработил и внедрил сам. Всяка решава реален проблем.</value></data>
   <data name="Label_Problem" xml:space="preserve"><value>ПРОБЛЕМ</value></data>
-  <data name="Label_Approach" xml:space="preserve"><value>ПОДХОД</value></data>
-  <data name="Link_Live" xml:space="preserve"><value>Демо</value></data>
-  <data name="Link_Code" xml:space="preserve"><value>Код</value></data>
-  <!-- Featured: SchoolSelect -->
-  <data name="Featured_Badge" xml:space="preserve"><value>★ Най-мащабен проект</value></data>
-  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Сравнение на средни училища за българските семейства</value></data>
-  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Родителите се ориентират в сложни класирания без ясни инструменти за информиран избор.</value></data>
-  <data name="SchoolSelect_Approach" xml:space="preserve"><value>Платформа, агрегираща профили на училища, балове за прием и информация за паралелки за информиран избор.</value></data>
-  <data name="SchoolSelect_CTA" xml:space="preserve"><value>Разгледай проекта</value></data>
+  <data name="Label_Solution" xml:space="preserve"><value>РЕШЕНИЕ</value></data>
+  <data name="Label_Result" xml:space="preserve"><value>РЕЗУЛТАТ / СТАТУС</value></data>
+  <data name="Status_Production" xml:space="preserve"><value>В продукция</value></data>
+  <data name="Status_Development" xml:space="preserve"><value>В разработка и внедряване</value></data>
+  <!-- SchoolSelect -->
+  <data name="SchoolSelect_Tagline" xml:space="preserve"><value>Платформа за сравнение на средни училища</value></data>
+  <data name="SchoolSelect_Problem" xml:space="preserve"><value>Приемът след 7 клас залива родителите с класирания, балове и профили — но без инструмент, с който да ги сравнят и осмислят.</value></data>
+  <data name="SchoolSelect_Solution" xml:space="preserve"><value>Платформа, която събира на едно място профилите на училищата, баловете за прием и паралелките — и ги прави сравними при избора на училище.</value></data>
+  <data name="SchoolSelect_Result" xml:space="preserve"><value>Работеща платформа с 650+ регистрирани потребители, използвана от родители в кампанията за прием.</value></data>
+  <data name="SchoolSelect_CTA" xml:space="preserve"><value>Разгледайте платформата</value></data>
   <data name="SchoolSelect_Stat_Users" xml:space="preserve"><value>регистрирани потребители</value></data>
-  <data name="SchoolSelect_Stat_Plan" xml:space="preserve"><value>план наличен</value></data>
-  <!-- Section headings -->
-  <data name="Section_AI_Title" xml:space="preserve"><value>AI &amp; Образование</value></data>
-  <data name="Section_AI_Subtitle" xml:space="preserve"><value>Инструменти на пресечната точка между AI и програмното обучение.</value></data>
-  <data name="Section_Personal_Title" xml:space="preserve"><value>Лични проекти</value></data>
-  <data name="Section_Personal_Subtitle" xml:space="preserve"><value>Side projects — идеи, реализирани извън работното време.</value></data>
-  <data name="Section_Client_Title" xml:space="preserve"><value>Клиентски проекти</value></data>
-  <data name="Section_Client_Subtitle" xml:space="preserve"><value>Реални проекти, създадени за клиенти.</value></data>
   <!-- CodeGrade -->
-  <data name="CodeGrade_Tagline" xml:space="preserve"><value>Автоматизирано оценяване на код за обучение по програмиране</value></data>
-  <data name="CodeGrade_Problem" xml:space="preserve"><value>Преподавателите прекарват часове в оценяване на студентски код. Обратната връзка идва твърде късно.</value></data>
-  <data name="CodeGrade_Approach" xml:space="preserve"><value>Платформа с Judge0 и ролеви достъп за студенти и преподаватели. Следващо: AI слой за педагогически коментари.</value></data>
-  <!-- Algorithm Visualizer -->
-  <data name="AlgoViz_Desc" xml:space="preserve"><value>Интерактивна платформа за визуализация на алгоритми и структури от данни с контрол на скоростта и анализ на сложността.</value></data>
-  <data name="AlgoViz_Problem" xml:space="preserve"><value>Алгоритмите и структурите от данни са абстрактни концепции, които студентите трудно разбират само от текст и псевдокод.</value></data>
-  <data name="AlgoViz_Approach" xml:space="preserve"><value>Стъпка по стъпка визуализация на сортиращи, търсещи и графови алгоритми.</value></data>
-  <!-- CS Visual Lab -->
-  <data name="CSVisualLab_Desc" xml:space="preserve"><value>Интерактивна платформа за изучаване на компютърни науки с анимирани визуализации.</value></data>
-  <!-- AcademyLogos -->
-  <data name="AcademyLogos_Desc" xml:space="preserve"><value>Образователна платформа с курсове по математика, БЕЛ и програмиране за ученици от 5-7 клас.</value></data>
-  <!-- Flow -->
-  <data name="Flow_Desc" xml:space="preserve"><value>Проследявайте приходи и разходи, планирайте бюджет и анализирайте финансовото си състояние.</value></data>
-  <!-- World Explorer -->
-  <data name="WorldExplorer_Desc" xml:space="preserve"><value>Интерактивна карта за маркиране на посетени и желани дестинации по света.</value></data>
-  <!-- EfficiencyHub -->
-  <data name="EfficiencyHub_Desc" xml:space="preserve"><value>Приложение за управление на проекти и задачи.</value></data>
-  <!-- AllSeasonBioGarden -->
-  <data name="BioGarden_Desc" xml:space="preserve"><value>E-commerce платформа за умни хидропонни градини с продуктов каталог и онлайн магазин.</value></data>
+  <data name="CodeGrade_Tagline" xml:space="preserve"><value>Автоматична проверка на код за обучението по програмиране</value></data>
+  <data name="CodeGrade_Problem" xml:space="preserve"><value>Ръчната проверка на ученически код отнема часове, а обратната връзка стига до ученика твърде късно, за да е полезна.</value></data>
+  <data name="CodeGrade_Solution" xml:space="preserve"><value>Система, която изпълнява и проверява решенията автоматично, с отделни роли за ученици и преподаватели. Следващата стъпка е AI слой за педагогическа обратна връзка — пряко свързан с дисертацията ми.</value></data>
+  <data name="CodeGrade_Result" xml:space="preserve"><value>В активна разработка и внедряване. Служи и като инфраструктура за дисертационното ми изследване.</value></data>
+  <data name="CodeGrade_CTA" xml:space="preserve"><value>Разгледайте системата</value></data>
+  <!-- More tools -->
+  <data name="Section_More_Title" xml:space="preserve"><value>Още образователни инструменти</value></data>
+  <data name="Section_More_Subtitle" xml:space="preserve"><value>По-малки инструменти, които използвам в преподаването.</value></data>
+  <data name="AlgoViz_Desc" xml:space="preserve"><value>Визуализация стъпка по стъпка на алгоритми и структури от данни — за уроците, в които текстът и псевдокодът не стигат.</value></data>
+  <data name="AcademyLogos_Desc" xml:space="preserve"><value>Образователна платформа с курсове по математика, БЕЛ и програмиране за ученици от 5–7 клас.</value></data>
   <!-- More -->
-  <data name="More_Text" xml:space="preserve"><value>Повече проекти и експерименти в GitHub</value></data>
+  <data name="More_Text" xml:space="preserve"><value>Повече проекти и експерименти — в GitHub</value></data>
   <data name="More_GitHub" xml:space="preserve"><value>GitHub профил</value></data>
 </root>

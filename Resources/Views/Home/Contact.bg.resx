@@ -29,16 +29,19 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Meta_Title" xml:space="preserve"><value>Контакт — Явор Кънев | телефон, Viber, имейл</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Свържете се за обучение, AI одит или консултация. Безплатен 20-минутен разговор — телефон, Viber или имейл.</value></data>
   <data name="RH_Right" xml:space="preserve"><value>Нека поговорим</value></data>
   <data name="Page_Label" xml:space="preserve"><value>КОНТАКТ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Свържете се</value></data>
-  <data name="Page_Subtitle" xml:space="preserve"><value>Имате проект, изследователско сътрудничество или просто искате да поговорим за AI в образованието? Ще се радвам да чуя от вас.</value></data>
-  <data name="Booking_Kicker" xml:space="preserve"><value>Най-бърз начин</value></data>
-  <data name="Booking_Title" xml:space="preserve"><value>Запази 30-минутен разговор</value></data>
-  <data name="Booking_Text" xml:space="preserve"><value>Без ангажимент. Ако имате конкретен проект, идея за изследване или въпрос за AI в образованието — избери свободен слот и поговаряме.</value></data>
-  <data name="Booking_Button" xml:space="preserve"><value>Избери час</value></data>
-  <data name="Other_Ways" xml:space="preserve"><value>ДРУГИ НАЧИНИ</value></data>
-  <data name="Other_Email" xml:space="preserve"><value>Имейл</value></data>
-  <data name="Other_GitHub" xml:space="preserve"><value>GitHub</value></data>
-  <data name="Other_GitHub_Link" xml:space="preserve"><value>PetrovKunev</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Въпрос за обучение, одит или консултация? Телефон, Viber или имейл — както ви е удобно.</value></data>
+  <data name="Call_Kicker" xml:space="preserve"><value>Най-бърз начин</value></data>
+  <data name="Call_Title" xml:space="preserve"><value>Обадете се</value></data>
+  <data name="Call_Text" xml:space="preserve"><value>Първият 20-минутен разговор е безплатен и без ангажимент — разказвате ми каква е ситуацията във вашето училище, а аз казвам честно с какво мога да помогна.</value></data>
+  <data name="Call_Viber" xml:space="preserve"><value>Пишете във Viber</value></data>
+  <data name="Ways" xml:space="preserve"><value>ВСИЧКИ КАНАЛИ</value></data>
+  <data name="Way_Phone" xml:space="preserve"><value>Телефон</value></data>
+  <data name="Way_Viber_Link" xml:space="preserve"><value>Отвори чат</value></data>
+  <data name="Way_Email" xml:space="preserve"><value>Имейл</value></data>
+  <data name="Profiles" xml:space="preserve"><value>ПРОФИЛИ</value></data>
 </root>

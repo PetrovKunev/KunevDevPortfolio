@@ -1,7 +1,8 @@
 @inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Yavor Kunev";
+    ViewData["MetaTitle"] = Localizer["Meta_Title"].Value;
+    ViewData["MetaDescription"] = Localizer["Meta_Desc"].Value;
 }
 
 <!-- Hero Section -->
@@ -21,10 +22,10 @@
                 </h1>
                 <p class="hero-subheadline">@Localizer["Hero_Subheadline"]</p>
                 <div class="d-flex gap-3 flex-wrap hero-buttons mb-4">
-                    <a class="btn-accent" asp-controller="Home" asp-action="Research">
-                        @Localizer["Hero_CTA_Research"] <span aria-hidden="true">→</span>
+                    <a class="btn-accent" asp-controller="Home" asp-action="Consulting">
+                        @Localizer["Hero_CTA_Services"] <span aria-hidden="true">→</span>
                     </a>
-                    <a class="btn-outline-light-custom" asp-controller="Home" asp-action="Projects">@Localizer["Hero_CTA_Work"]</a>
+                    <a class="btn-outline-light-custom" asp-controller="Home" asp-action="Research">@Localizer["Hero_CTA_Research"]</a>
                 </div>
                 <p class="hero-credibility">@Localizer["Hero_Credibility_Before"]<a href="https://codegrade.kunev.dev/" target="_blank" rel="noopener">CodeGrade</a>@Localizer["Hero_Credibility_After"]</p>
             </div>
@@ -51,6 +52,70 @@
     </div>
 </section>
 
+<!-- Services / Products Section -->
+<section class="about-section">
+    <div class="container px-3 px-lg-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="section-label">@Localizer["Products_Label"]</div>
+                <h2>@Localizer["Products_Title"]</h2>
+
+                <div class="package-list mt-4">
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Prod1_Title"]</h3>
+                                <span class="package-price">@Localizer["Prod1_Price"]</span>
+                                <p class="package-meta">@Localizer["Prod1_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Prod1_Desc"]</p>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Prod2_Title"]</h3>
+                                <span class="package-price">@Localizer["Prod2_Price"]</span>
+                                <p class="package-meta">@Localizer["Prod2_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Prod2_Desc"]</p>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div>
+                            <div class="package-head">
+                                <h3 class="package-title">@Localizer["Prod3_Title"]</h3>
+                                <span class="package-price">@Localizer["Prod3_Price"]</span>
+                                <p class="package-meta">@Localizer["Prod3_Meta"]</p>
+                            </div>
+                            <p class="package-desc">@Localizer["Prod3_Desc"]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="about-text mt-4">@Localizer["Products_Free"]</p>
+                <a class="btn-accent d-inline-flex" asp-controller="Home" asp-action="Consulting">
+                    @Localizer["Products_CTA"] <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Built / Case-study teaser Section -->
+<section class="about-section">
+    <div class="container px-3 px-lg-5">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="section-label">@Localizer["Built_Label"]</div>
+                <h2>@Localizer["Built_Title"]</h2>
+                <p class="about-text">@Localizer["Built_Text"]</p>
+                <a class="btn-outline-light-custom d-inline-flex" asp-controller="Home" asp-action="Projects">@Localizer["Built_CTA"]</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- About Section (inline) -->
 <section class="about-section">
     <div class="container px-3 px-lg-5">
@@ -62,9 +127,11 @@
                 <p class="about-text">@Localizer["About_P2"]</p>
                 <p class="about-text">@Localizer["About_P3"]</p>
                 <div class="social-links mt-4">
-                    <a href="https://github.com/PetrovKunev" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="tel:+359897942126" aria-label="Телефон"><i class="bi bi-telephone"></i></a>
+                    <a href="viber://chat?number=%2B359897942126" aria-label="Viber"><i class="bi bi-chat-dots"></i></a>
+                    <a href="mailto:yavor@kunev.dev" aria-label="Имейл"><i class="bi bi-envelope"></i></a>
                     <a href="https://linkedin.com/in/yavor-kunev" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="mailto:yavor@kunev.dev" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="https://github.com/PetrovKunev" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                 </div>
             </div>
         </div>

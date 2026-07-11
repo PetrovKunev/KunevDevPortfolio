@@ -1,4 +1,36 @@
+@inject IViewLocalizer Localizer
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "About";
+    ViewData["MetaTitle"] = Localizer["Meta_Title"].Value;
+    ViewData["MetaDescription"] = Localizer["Meta_Desc"].Value;
 }
+
+<section class="section-dark">
+    <div class="container px-3 px-lg-5">
+        <div class="running-head">
+            <span>№ 06 · kunev.dev / about</span>
+            <span class="rh-right">@Localizer["RH_Right"]</span>
+        </div>
+
+        <div class="row justify-content-start">
+            <div class="col-lg-9">
+                <div class="section-label">@Localizer["Page_Label"]</div>
+                <h1 class="section-heading mb-4">@Localizer["Page_Title"]</h1>
+
+                <p class="about-text dropcap">@Localizer["P_Teacher"]</p>
+                <p class="about-text">@Localizer["P_Researcher"]</p>
+                <p class="about-text">@Localizer["P_Builder"]</p>
+
+                <div class="mt-5 pt-4" style="border-top: 1px solid var(--kd-rule);">
+                    <p class="about-text">@Localizer["CTA_Text"]</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a class="btn-accent" asp-controller="Home" asp-action="Consulting">
+                            @Localizer["CTA_Services"] <span aria-hidden="true">→</span>
+                        </a>
+                        <a class="btn-outline-light-custom" asp-controller="Home" asp-action="Contact">@Localizer["CTA_Contact"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

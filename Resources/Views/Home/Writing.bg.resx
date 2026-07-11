@@ -29,19 +29,21 @@
   <resheader name="version"><value>2.0</value></resheader>
   <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
   <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Meta_Title" xml:space="preserve"><value>Статии — изкуствен интелект в училище | Явор Кънев</value></data>
+  <data name="Meta_Desc" xml:space="preserve"><value>Статии за изкуствения интелект в образованието и обучението по програмиране — практично, без хайп.</value></data>
   <data name="RH_Right" xml:space="preserve"><value>Съдържание · в процес</value></data>
   <data name="Page_Label" xml:space="preserve"><value>СТАТИИ</value></data>
   <data name="Page_Title" xml:space="preserve"><value>Статии</value></data>
-  <data name="Page_Subtitle" xml:space="preserve"><value>Мисли за AI, образование и създаване на неща, които имат значение.</value></data>
-  <data name="Tag_AI" xml:space="preserve"><value>AI + ОБРАЗОВАНИЕ</value></data>
-  <data name="Tag_Infra" xml:space="preserve"><value>ИНФРАСТРУКТУРА</value></data>
-  <data name="Tag_Research" xml:space="preserve"><value>КОГНИТИВНА НАУКА</value></data>
-  <data name="Post1_Title" xml:space="preserve"><value>Защо ChatGPT е лош учител по програмиране — и как изглежда доброто AI обучение</value></data>
-  <data name="Post1_Desc" xml:space="preserve"><value>Разликата между генериране на отговори и развиване на разбиране. Какво казва когнитивната наука за ефективното AI обучение.</value></data>
-  <data name="Post2_Title" xml:space="preserve"><value>Локален AI сървър за изследвания: какво научих</value></data>
-  <data name="Post2_Desc" xml:space="preserve"><value>Практическо ръководство за изграждане на локална LLM инфраструктура за академични изследвания — хардуер, избор на модели и научени уроци.</value></data>
-  <data name="Post3_Title" xml:space="preserve"><value>Теория за когнитивното натоварване и LLM: преподаваме ли програмиране погрешно?</value></data>
-  <data name="Post3_Desc" xml:space="preserve"><value>Как теорията за когнитивното натоварване оспорва общоприетите предположения за използване на AI асистенти в начални курсове по програмиране.</value></data>
+  <data name="Page_Subtitle" xml:space="preserve"><value>Практично за изкуствения интелект в училище и обучението по програмиране — без хайп.</value></data>
+  <data name="Tag_1" xml:space="preserve"><value>ИЗСЛЕДВАНИЯ</value></data>
+  <data name="Tag_2" xml:space="preserve"><value>AI + ОБРАЗОВАНИЕ</value></data>
+  <data name="Tag_3" xml:space="preserve"><value>ОТ ПРАКТИКАТА</value></data>
+  <data name="Post1_Title" xml:space="preserve"><value>Какво трябва да „знае" една AI система, за да преподава?</value></data>
+  <data name="Post1_Desc" xml:space="preserve"><value>Представянето на знания в интелигентните системи за обучение — темата на дисертацията ми, обяснена без академичния жаргон.</value></data>
+  <data name="Post2_Title" xml:space="preserve"><value>AI в българското училище: кое работи още днес и кое е хайп</value></data>
+  <data name="Post2_Desc" xml:space="preserve"><value>Трезв преглед на това, което изкуственият интелект реално може да свърши за учителя днес — и къде обещанията изпреварват действителността.</value></data>
+  <data name="Post3_Title" xml:space="preserve"><value>Уроци от CodeGrade: автоматична проверка на ученически код в практиката</value></data>
+  <data name="Post3_Desc" xml:space="preserve"><value>Какво научих от проектирането и внедряването на система за автоматична проверка на код в реално обучение по програмиране.</value></data>
   <data name="Coming_Soon" xml:space="preserve"><value>Очаквайте скоро</value></data>
   <data name="Subscribe_Text" xml:space="preserve"><value>Статиите идват скоро. Междувременно, не се колебайте да се свържете, ако искате да обсъдим някоя от тези теми.</value></data>
 </root>
