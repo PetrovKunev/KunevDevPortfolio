@@ -59,7 +59,6 @@
   <data name="Section_More_Title" xml:space="preserve"><value>Още образователни инструменти</value></data>
   <data name="Section_More_Subtitle" xml:space="preserve"><value>По-малки инструменти, които използвам в преподаването.</value></data>
   <data name="AlgoViz_Desc" xml:space="preserve"><value>Визуализация стъпка по стъпка на алгоритми и структури от данни — за уроците, в които текстът и псевдокодът не стигат.</value></data>
-  <data name="CSVisualLab_Desc" xml:space="preserve"><value>Интерактивни анимирани визуализации на понятия от компютърните науки.</value></data>
   <data name="AcademyLogos_Desc" xml:space="preserve"><value>Образователна платформа с курсове по математика, БЕЛ и програмиране за ученици от 5–7 клас.</value></data>
   <!-- More -->
   <data name="More_Text" xml:space="preserve"><value>Повече проекти и експерименти — в GitHub</value></data>
