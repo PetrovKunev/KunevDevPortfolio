@@ -20,5 +20,8 @@ namespace KunevDevPortfolio.Controllers
         public IActionResult Research() => View();
 
         public IActionResult Writing() => View();
+
+        // Статия № 01 — Какво трябва да „знае“ една AI система, за да преподава?
+        public IActionResult KnowledgeRepresentation() => View();
     }
 }

@@ -45,5 +45,6 @@
   <data name="Post3_Title" xml:space="preserve"><value>Уроци от CodeGrade: автоматична проверка на ученически код в практиката</value></data>
   <data name="Post3_Desc" xml:space="preserve"><value>Какво научих от проектирането и внедряването на система за автоматична проверка на код в реално обучение по програмиране.</value></data>
   <data name="Coming_Soon" xml:space="preserve"><value>Очаквайте скоро</value></data>
-  <data name="Subscribe_Text" xml:space="preserve"><value>Статиите идват скоро. Междувременно, не се колебайте да се свържете, ако искате да обсъдим някоя от тези теми.</value></data>
+  <data name="Read_Post" xml:space="preserve"><value>Прочети</value></data>
+  <data name="Subscribe_Text" xml:space="preserve"><value>Още статии идват скоро. Междувременно, не се колебайте да се свържете, ако искате да обсъдим някоя от тези теми.</value></data>
 </root>

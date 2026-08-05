@@ -92,7 +92,7 @@
                         <a class="nav-link @(IsActive("Research") ? "active" : "")" asp-controller="Home" asp-action="Research">@Localizer["Nav_Research"]</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @(IsActive("Writing") ? "active" : "")" asp-controller="Home" asp-action="Writing">@Localizer["Nav_Writing"]</a>
+                        <a class="nav-link @(IsActive("Writing") || IsActive("KnowledgeRepresentation") ? "active" : "")" asp-controller="Home" asp-action="Writing">@Localizer["Nav_Writing"]</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @(IsActive("About") ? "active" : "")" asp-controller="Home" asp-action="About">@Localizer["Nav_About"]</a>

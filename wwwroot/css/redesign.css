@@ -1034,6 +1034,129 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   }
 }
 
+/* Публикувана статия в списъка */
+.writing-item h2 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--kd-transition);
+}
+.writing-item h2 a:hover { color: var(--kd-accent); }
+
+.writing-read-link {
+  font-family: var(--kd-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kd-accent-2);
+  text-decoration: none;
+  text-align: right;
+  justify-self: end;
+  align-self: start;
+  padding-top: 0.35rem;
+  transition: color var(--kd-transition);
+}
+.writing-read-link::before { content: '→ '; color: var(--kd-accent); }
+.writing-read-link:hover { color: var(--kd-ink); }
+
+@media (max-width: 720px) {
+  .writing-read-link {
+    grid-column: 2;
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+/* ---------- Article — страница на статия ---------- */
+.article-title {
+  font-family: var(--kd-font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 4.5vw, 3.1rem);
+  letter-spacing: -0.018em;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+  max-width: 26ch;
+  text-wrap: balance;
+}
+.article-title em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
+
+.article-lead {
+  font-family: var(--kd-font-italic);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--kd-ink-2);
+  max-width: 56ch;
+  margin-bottom: 1.5rem;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--kd-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--kd-muted);
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--kd-rule);
+  margin-bottom: 2.5rem;
+}
+.article-meta span + span::before { content: '·'; margin: 0 0.75rem; }
+
+.article-body p {
+  font-family: var(--kd-font-body);
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--kd-ink-2);
+  max-width: 62ch;
+  margin-bottom: 1.35rem;
+}
+.article-body p.dropcap::first-letter {
+  font-family: var(--kd-font-display);
+  font-weight: 500;
+  font-size: 3.8rem;
+  float: left;
+  line-height: 0.9;
+  padding: 0.35rem 0.5rem 0 0;
+  color: var(--kd-accent);
+  font-style: italic;
+}
+.article-body h2 {
+  font-family: var(--kd-font-display);
+  font-weight: 500;
+  font-size: 1.65rem;
+  letter-spacing: -0.012em;
+  line-height: 1.15;
+  margin: 2.75rem 0 1.1rem;
+  max-width: 30ch;
+}
+.article-body h2 em { font-style: italic; font-weight: 400; color: var(--kd-accent); }
+.article-body strong { color: var(--kd-ink); font-weight: 600; }
+.article-body .pull-quote { margin: 2.25rem 0; }
+
+.article-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--kd-rule);
+}
+.article-footer .article-back {
+  font-family: var(--kd-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--kd-muted);
+  transition: color var(--kd-transition);
+}
+.article-footer .article-back::before { content: '← '; color: var(--kd-accent); }
+.article-footer .article-back:hover { color: var(--kd-accent); }
+.article-footer p {
+  font-family: var(--kd-font-italic);
+  color: var(--kd-muted);
+  font-size: 1.05rem;
+  max-width: 58ch;
+  margin-top: 1.25rem;
+}
+
 /* ---------- Contact ---------- */
 .contact-section {
   min-height: calc(100vh - 5rem);
@@ -1093,7 +1216,8 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
 .contact-info-card p a:hover { text-decoration-color: var(--kd-accent); }
 
 /* ---------- Footer ---------- */
-footer {
+/* body > footer: само колонтитулът на сайта, не и <footer> вътре в статия */
+body > footer {
   background: var(--kd-paper-2) !important;
   border-top: 1px solid var(--kd-rule);
   color: var(--kd-muted);
@@ -1102,10 +1226,10 @@ footer {
   font-size: 0.75rem;
   letter-spacing: 0.08em;
 }
-footer .fw-bold { color: var(--kd-ink); }
-footer a { color: var(--kd-ink); text-decoration-color: var(--kd-rule); }
-footer a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
-footer .small, footer .m-0 { color: var(--kd-muted); }
+body > footer .fw-bold { color: var(--kd-ink); }
+body > footer a { color: var(--kd-ink); text-decoration-color: var(--kd-rule); }
+body > footer a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
+body > footer .small, body > footer .m-0 { color: var(--kd-muted); }
 
 /* Running head footer */
 .footer-running {

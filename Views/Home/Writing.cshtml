@@ -22,10 +22,10 @@
                     <div class="writing-item">
                         <div>
                             <div class="writing-tag">@Localizer["Tag_1"]</div>
-                            <h2>@Localizer["Post1_Title"]</h2>
+                            <h2><a asp-controller="Home" asp-action="KnowledgeRepresentation">@Localizer["Post1_Title"]</a></h2>
                             <p>@Localizer["Post1_Desc"]</p>
                         </div>
-                        <span class="writing-coming-soon">@Localizer["Coming_Soon"]</span>
+                        <a class="writing-read-link" asp-controller="Home" asp-action="KnowledgeRepresentation">@Localizer["Read_Post"]</a>
                     </div>
 
                     <div class="writing-item">
