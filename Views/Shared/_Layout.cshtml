@@ -26,15 +26,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="@metaTitle" />
     <meta name="twitter:description" content="@metaDescription" />
-    <!-- Favicon (Editorial Scholar, Option A) -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" media="(prefers-color-scheme: light)" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg?v=2" media="(prefers-color-scheme: dark)" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
-    <link rel="shortcut icon" href="/favicon.ico?v=2" />
-    <link rel="manifest" href="/site.webmanifest?v=2" />
-    <meta name="theme-color" content="#f3efe7" />
+    <!-- Favicon — знак „отворена книга" (handoff: wwwroot/assets/logo) -->
+    <link rel="icon" href="/favicon.ico?v=3" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+    <link rel="manifest" href="/site.webmanifest?v=3" />
+    <meta name="theme-color" content="#F2EDE1" />
     <!-- Google Fonts — Fraunces (display), Inter (body), Instrument Serif (italic accents), JetBrains Mono (labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,7 +67,15 @@
     <nav id="mainNav" class="navbar navbar-expand-lg py-3">
         <div class="container px-3 px-lg-5">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                <span>kunev.dev</span>
+                <svg class="brand-mark" viewBox="0 0 120 120" fill="none" aria-hidden="true" focusable="false">
+                    <path d="M60 66 L26 34 M60 66 L60 20 M60 66 L94 34" stroke="currentColor" stroke-width="6.5" />
+                    <path d="M60 68 L16 58 L16 88 L60 98 Z" fill="#A8E1D5" />
+                    <path d="M60 68 L16 58 L16 88 L60 98 M60 68 L104 58 L104 88 L60 98 M60 68 V98" stroke="currentColor" stroke-width="6.5" stroke-linejoin="round" />
+                    <circle cx="26" cy="34" r="8" fill="currentColor" />
+                    <circle cx="60" cy="20" r="8" fill="currentColor" />
+                    <circle cx="94" cy="34" r="8" fill="currentColor" />
+                </svg>
+                <span class="brand-word">kunev<em>.dev</em></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

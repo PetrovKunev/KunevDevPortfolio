@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none" role="img" aria-label="kunev.dev">
+  <path d="M60 66 L26 34 M60 66 L60 20 M60 66 L94 34" stroke="#F2EDE1" stroke-width="6.5"></path>
+  <path d="M60 68 L16 58 L16 88 L60 98 Z" fill="#A8E1D5"></path>
+  <path d="M60 68 L16 58 L16 88 L60 98 M60 68 L104 58 L104 88 L60 98 M60 68 V98" stroke="#F2EDE1" stroke-width="6.5" stroke-linejoin="round"></path>
+  <circle cx="26" cy="34" r="8" fill="#F2EDE1"></circle>
+  <circle cx="60" cy="20" r="8" fill="#F2EDE1"></circle>
+  <circle cx="94" cy="34" r="8" fill="#F2EDE1"></circle>
+</svg>

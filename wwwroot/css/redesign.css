@@ -14,6 +14,11 @@
   --kd-accent-2:   #0a5c50;   /* deep teal */
   --kd-accent-glow: rgba(15, 138, 120, 0.10);
 
+  /* Лого (handoff logos.kunev.dev) */
+  --kd-logo-ink:   #14130F;   /* мастило на знака и "kunev" */
+  --kd-logo-mint:  #A8E1D5;   /* плътната страница на книгата */
+  --kd-logo-teal:  #1F8A7E;   /* ".dev", focus outline на линка */
+
   --kd-font-display: 'Fraunces', Georgia, serif;
   --kd-font-italic:  'Instrument Serif', Georgia, serif;
   --kd-font-body:    'Inter', system-ui, -apple-system, sans-serif;
@@ -76,28 +81,44 @@ a:hover { color: var(--kd-accent); text-decoration-color: var(--kd-accent); }
   padding-bottom: 0.9rem;
 }
 
+/* Лого lockup: знак + wordmark (handoff logos.kunev.dev).
+   Знакът е статичен — никакъв hover ефект или анимация върху него. */
 #mainNav .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--kd-logo-ink) !important;
+  text-decoration: none;
+}
+#mainNav .brand-mark {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+#mainNav .brand-word {
   font-family: var(--kd-font-display);
+  font-size: 1.5rem;
   font-weight: 500;
-  font-size: 1.25rem;
-  letter-spacing: -0.005em;
-  color: var(--kd-ink) !important;
+  letter-spacing: -0.01em;
+  line-height: 1;
 }
-#mainNav .navbar-brand span {
-  color: var(--kd-ink) !important;
-  background: none !important;
-  -webkit-text-fill-color: var(--kd-ink) !important;
-  font-weight: 500;
-}
-#mainNav .navbar-brand span::after {
-  content: ".dev";
-  color: var(--kd-accent);
+#mainNav .brand-word em {
   font-style: italic;
   font-weight: 400;
+  color: var(--kd-logo-teal);
 }
-#mainNav .navbar-brand span { font-size: 0; }
-#mainNav .navbar-brand span::before { content: "kunev"; font-size: 1.25rem; font-weight: 500; font-style: normal; }
-#mainNav .navbar-brand span::after { font-size: 1.25rem; }
+#mainNav .navbar-brand:hover .brand-word {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+#mainNav .navbar-brand:focus-visible {
+  outline: 2px solid var(--kd-logo-teal);
+  outline-offset: 4px;
+}
+@media (max-width: 767.98px) {
+  #mainNav .brand-mark { width: 28px; height: 28px; }
+}
 
 #mainNav .nav-link {
   color: var(--kd-ink-2) !important;
